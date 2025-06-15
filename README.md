@@ -2,6 +2,8 @@
 
 A tool for visualizing intermediate layer (Conv layer) outputs from YOLOv9 models and generating heatmaps.
 
+ [![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/PINTO0309/yolov9_wholebody34_heatmap_vis)
+
 ## Overview
 
 This tool extracts outputs from each Conv layer in a YOLOv9 ONNX model and visualizes them as heatmaps. It helps understand which regions the human body detection model is focusing on. The sample ONNX models committed are incomplete and unfinished models.
