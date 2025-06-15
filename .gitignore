@@ -2,3 +2,4 @@ heatmaps/
 heatmaps_inverted/
 overlays_*/
 overlays_*_inverted/
+*.onnx
