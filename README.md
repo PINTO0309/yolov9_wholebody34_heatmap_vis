@@ -87,6 +87,14 @@ The cv3.0.cv3 layers in intermediate layers (model.7, model.9) moderately abstra
 python generate_heatmaps_unified.py --layers "cv3.0.cv3"
 ```
 
+For more precise control, you can specify the exact layer path to visualize a specific Conv output:
+
+```bash
+python generate_heatmaps_unified.py --layers "/model.7/cv3/cv3.0/cv3/conv/Conv_output_0"
+```
+
+
+
 ### Comparison Grid Images
 
 `comparison_grid.png` and `comparison_grid_middle.png` show comparisons of layers at different depths.
