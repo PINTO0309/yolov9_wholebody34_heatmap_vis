@@ -106,6 +106,8 @@ When multiple layers are processed (e.g., when using `--layers "/model.35"`), th
 
 These grid images are saved in both the heatmaps and overlays directories (unless `--no-overlay` is used).
 
+![comparison_grid_middle](https://github.com/user-attachments/assets/37a62307-5e5b-40cb-94ed-0fd8396eb61d)
+
 ## Notes
 
 - The ONNX model is temporarily modified but deleted after execution
