@@ -40,6 +40,12 @@ python generate_heatmaps_unified.py --no-overlay
 
 # Use a custom ONNX model file
 python generate_heatmaps_unified.py --model path/to/your/model.onnx
+
+# Use a custom input image
+python generate_heatmaps_unified.py --image path/to/your/image.jpg
+
+# Use both custom model and image
+python generate_heatmaps_unified.py --model custom_model.onnx --image custom_image.jpg
 ```
 
 ### Specifying Specific Layers
@@ -61,6 +67,7 @@ python generate_heatmaps_unified.py --layers "/model.7/cv3/cv3.0/cv3/conv/Conv_o
 ## Parameters
 
 - `--model`: Path to ONNX model file (default: yolov9_e_wholebody34_0100_1x3x480x640.onnx)
+- `--image`: Path to input image file (default: 000000001000.jpg)
 - `--invert`: Invert heatmap colors (blue for body regions, red for background)
 - `--layers`: Specify layer names or patterns to extract (multiple values allowed)
 - `--alpha`: Specify overlay transparency (0.0-1.0, default: 0.4)
