@@ -12,6 +12,13 @@ This tool extracts outputs from each Conv layer in a YOLOv9 ONNX model and visua
 pip install onnx onnx-graphsurgeon onnxruntime opencv-python numpy
 ```
 
+## Download Test Model
+
+Download the test ONNX model from the following URL:
+```bash
+wget https://github.com/PINTO0309/yolov9_wholebody34_heatmap_vis/releases/download/onnx/yolov9_e_wholebody34_0100_1x3x480x640.onnx
+```
+
 ## Usage
 
 ### Basic Usage
