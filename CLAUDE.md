@@ -63,6 +63,10 @@ Generated files are organized into directories:
 - `overlays_XX/`: Overlay images with XX% transparency
 - `overlays_XX_inverted/`: Inverted overlay images
 
+When multiple layers are processed, comparison grid images are automatically generated:
+- `comparison_grid.png`: Grid showing first half of processed layers
+- `comparison_grid_middle.png`: Grid showing middle portion (25%-75%) of layers
+
 ## Model Details
 
 The repository includes:

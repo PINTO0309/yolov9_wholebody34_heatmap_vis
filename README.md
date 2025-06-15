@@ -92,14 +92,19 @@ python generate_heatmaps_unified.py --layers "cv3.0.cv3"
 For more precise control, you can specify the exact layer path to visualize a specific Conv output:
 
 ```bash
-python generate_heatmaps_unified.py --layers "/model.7/cv3/cv3.0/cv3/conv/Conv_output_0"
+python generate_heatmaps_unified.py --layers "/model.35/cv3/cv3.0/cv1/conv/Conv_output_0"
 ```
 
 ![overlay__model 35_cv3_cv3 0_cv1_conv_Conv_output_0](https://github.com/user-attachments/assets/ced40c7a-f286-4ee7-b396-ec1bd61828a5)
 
 ### Comparison Grid Images
 
-`comparison_grid.png` and `comparison_grid_middle.png` show comparisons of layers at different depths.
+When multiple layers are processed (e.g., when using `--layers "/model.35"`), the tool automatically generates comparison grid images:
+
+- `comparison_grid.png`: Shows the first half of all generated heatmaps/overlays in a grid layout
+- `comparison_grid_middle.png`: Shows the middle portion (25% to 75%) of all heatmaps/overlays
+
+These grid images are saved in both the heatmaps and overlays directories (unless `--no-overlay` is used).
 
 ## Notes
 
