@@ -17,11 +17,36 @@ def find_conv_outputs(graph: gs.Graph) -> List[Tuple[str, gs.Variable]]:
             conv_outputs.append((output_name, node.outputs[0]))
     return conv_outputs
 
-def modify_onnx_model(input_model_path: str, output_model_path: str, target_layers: List[str] = None) -> List[str]:
-    """Modify ONNX model to expose Conv layer outputs"""
+def get_model_input_shape(model_path: str) -> Tuple[int, int]:
+    """Get the input shape (width, height) from ONNX model"""
+    model = onnx.load(model_path)
+    input_shape = model.graph.input[0].type.tensor_type.shape
+    
+    # Extract dimensions - typically NCHW format
+    height = None
+    width = None
+    
+    for i, dim in enumerate(input_shape.dim):
+        if i == 2:  # Height dimension in NCHW
+            height = dim.dim_value
+        elif i == 3:  # Width dimension in NCHW
+            width = dim.dim_value
+    
+    if height and width:
+        return (width, height)  # Return as (width, height) for cv2.resize
+    else:
+        # Default fallback
+        print("Warning: Could not detect input shape from model, using default 640x480")
+        return (640, 480)
+
+def modify_onnx_model(input_model_path: str, output_model_path: str, target_layers: List[str] = None) -> Tuple[List[str], Tuple[int, int]]:
+    """Modify ONNX model to expose Conv layer outputs and return input shape"""
     # Load the model
     model = onnx.load(input_model_path)
     graph = gs.import_onnx(model)
+    
+    # Get input shape
+    input_shape = get_model_input_shape(input_model_path)
 
     # Find all Conv outputs
     all_conv_outputs = find_conv_outputs(graph)
@@ -52,7 +77,7 @@ def modify_onnx_model(input_model_path: str, output_model_path: str, target_laye
     model_modified = gs.export_onnx(graph)
     onnx.save(model_modified, output_model_path)
 
-    return conv_output_names
+    return conv_output_names, input_shape
 
 def preprocess_image(image_path: str, input_size: Tuple[int, int] = (640, 480)) -> Tuple[np.ndarray, Tuple[int, int], np.ndarray]:
     """Preprocess image for YOLOv9 model"""
@@ -237,7 +262,8 @@ def main():
 
     # Step 1: Inspect and modify ONNX model
     print("Modifying ONNX model to expose Conv outputs...")
-    conv_output_names = modify_onnx_model(input_model_path, modified_model_path, args.layers)
+    conv_output_names, model_input_size = modify_onnx_model(input_model_path, modified_model_path, args.layers)
+    print(f"Detected model input size: {model_input_size[0]}x{model_input_size[1]} (width x height)")
 
     if not conv_output_names:
         print("No matching Conv layers found!")
@@ -245,7 +271,7 @@ def main():
 
     # Step 2: Load and preprocess image
     print("\nPreprocessing image...")
-    img_data, original_size, original_img = preprocess_image(image_path)
+    img_data, original_size, original_img = preprocess_image(image_path, model_input_size)
     print(f"Input shape: {img_data.shape}")
 
     # Step 3: Run inference with modified model
