@@ -50,3 +50,5 @@ python generate_heatmaps_unified.py --activated --layers "/model.19/cv3/cv3.0/cv
 3. 計算効率と精度のバランスが良好
 
 生成されたヒートマップは`heatmaps/`および`overlays_60/`ディレクトリに保存されています。
+
+![overlay__model 22_cv3_cv3 0_cv3_act_Mul_output_0](https://github.com/user-attachments/assets/2691a384-0c7c-43bc-9464-acc87b05ae5c)
