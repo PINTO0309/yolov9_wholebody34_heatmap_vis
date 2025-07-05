@@ -1,0 +1,5545 @@
+{
+  "analysis_summary": {
+    "total_layers": 250,
+    "input_size": "640x480",
+    "top_recommendations": [
+      {
+        "name": "/model.20/cv1/act/Mul_output_0",
+        "shape": "128x60x80",
+        "downsampling": "8x",
+        "score": 0.7046874999999999,
+        "reasoning": "High spatial resolution preserves fine details; Middle-layer features combine low-level details with semantic understanding; Optimal channel depth for rich feature representation"
+      },
+      {
+        "name": "/model.20/cv2/act/Mul_output_0",
+        "shape": "128x60x80",
+        "downsampling": "8x",
+        "score": 0.7046874999999999,
+        "reasoning": "High spatial resolution preserves fine details; Middle-layer features combine low-level details with semantic understanding; Optimal channel depth for rich feature representation"
+      },
+      {
+        "name": "/model.22/cv1/act/Mul_output_0",
+        "shape": "256x60x80",
+        "downsampling": "8x",
+        "score": 0.7046874999999999,
+        "reasoning": "High spatial resolution preserves fine details; Middle-layer features combine low-level details with semantic understanding; Optimal channel depth for rich feature representation"
+      },
+      {
+        "name": "/model.22/cv2/cv2.0/cv1/act/Mul_output_0",
+        "shape": "64x60x80",
+        "downsampling": "8x",
+        "score": 0.7046874999999999,
+        "reasoning": "High spatial resolution preserves fine details; Middle-layer features combine low-level details with semantic understanding; Optimal channel depth for rich feature representation"
+      },
+      {
+        "name": "/model.22/cv2/cv2.0/cv2/act/Mul_output_0",
+        "shape": "64x60x80",
+        "downsampling": "8x",
+        "score": 0.7046874999999999,
+        "reasoning": "High spatial resolution preserves fine details; Middle-layer features combine low-level details with semantic understanding; Optimal channel depth for rich feature representation"
+      }
+    ]
+  },
+  "all_layers": [
+    {
+      "conv_name": "/model.20/cv1/conv/Conv_output_0",
+      "output_name": "/model.20/cv1/act/Mul_output_0",
+      "shape": [
+        1,
+        128,
+        60,
+        80
+      ],
+      "spatial_size": [
+        60,
+        80
+      ],
+      "channels": 128,
+      "downsampling_factor": [
+        8,
+        8
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 20,
+      "segmentation_score": 0.7046874999999999
+    },
+    {
+      "conv_name": "/model.20/cv2/conv/Conv_output_0",
+      "output_name": "/model.20/cv2/act/Mul_output_0",
+      "shape": [
+        1,
+        128,
+        60,
+        80
+      ],
+      "spatial_size": [
+        60,
+        80
+      ],
+      "channels": 128,
+      "downsampling_factor": [
+        8,
+        8
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 20,
+      "segmentation_score": 0.7046874999999999
+    },
+    {
+      "conv_name": "/model.22/cv1/conv/Conv_output_0",
+      "output_name": "/model.22/cv1/act/Mul_output_0",
+      "shape": [
+        1,
+        256,
+        60,
+        80
+      ],
+      "spatial_size": [
+        60,
+        80
+      ],
+      "channels": 256,
+      "downsampling_factor": [
+        8,
+        8
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 22,
+      "segmentation_score": 0.7046874999999999
+    },
+    {
+      "conv_name": "/model.22/cv2/cv2.0/cv1/conv/Conv_output_0",
+      "output_name": "/model.22/cv2/cv2.0/cv1/act/Mul_output_0",
+      "shape": [
+        1,
+        64,
+        60,
+        80
+      ],
+      "spatial_size": [
+        60,
+        80
+      ],
+      "channels": 64,
+      "downsampling_factor": [
+        8,
+        8
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 22,
+      "segmentation_score": 0.7046874999999999
+    },
+    {
+      "conv_name": "/model.22/cv2/cv2.0/cv2/conv/Conv_output_0",
+      "output_name": "/model.22/cv2/cv2.0/cv2/act/Mul_output_0",
+      "shape": [
+        1,
+        64,
+        60,
+        80
+      ],
+      "spatial_size": [
+        60,
+        80
+      ],
+      "channels": 64,
+      "downsampling_factor": [
+        8,
+        8
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 22,
+      "segmentation_score": 0.7046874999999999
+    },
+    {
+      "conv_name": "/model.22/cv2/cv2.0/m/m.0/cv1/conv/Conv_output_0",
+      "output_name": "/model.22/cv2/cv2.0/m/m.0/cv1/act/Mul_output_0",
+      "shape": [
+        1,
+        64,
+        60,
+        80
+      ],
+      "spatial_size": [
+        60,
+        80
+      ],
+      "channels": 64,
+      "downsampling_factor": [
+        8,
+        8
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 22,
+      "segmentation_score": 0.7046874999999999
+    },
+    {
+      "conv_name": "/model.22/cv2/cv2.0/m/m.0/cv2/conv/Conv_output_0",
+      "output_name": "/model.22/cv2/cv2.0/m/m.0/cv2/act/Mul_output_0",
+      "shape": [
+        1,
+        64,
+        60,
+        80
+      ],
+      "spatial_size": [
+        60,
+        80
+      ],
+      "channels": 64,
+      "downsampling_factor": [
+        8,
+        8
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 22,
+      "segmentation_score": 0.7046874999999999
+    },
+    {
+      "conv_name": "/model.22/cv2/cv2.0/m/m.1/cv1/conv/Conv_output_0",
+      "output_name": "/model.22/cv2/cv2.0/m/m.1/cv1/act/Mul_output_0",
+      "shape": [
+        1,
+        64,
+        60,
+        80
+      ],
+      "spatial_size": [
+        60,
+        80
+      ],
+      "channels": 64,
+      "downsampling_factor": [
+        8,
+        8
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 22,
+      "segmentation_score": 0.7046874999999999
+    },
+    {
+      "conv_name": "/model.22/cv2/cv2.0/m/m.1/cv2/conv/Conv_output_0",
+      "output_name": "/model.22/cv2/cv2.0/m/m.1/cv2/act/Mul_output_0",
+      "shape": [
+        1,
+        64,
+        60,
+        80
+      ],
+      "spatial_size": [
+        60,
+        80
+      ],
+      "channels": 64,
+      "downsampling_factor": [
+        8,
+        8
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 22,
+      "segmentation_score": 0.7046874999999999
+    },
+    {
+      "conv_name": "/model.22/cv2/cv2.0/cv3/conv/Conv_output_0",
+      "output_name": "/model.22/cv2/cv2.0/cv3/act/Mul_output_0",
+      "shape": [
+        1,
+        128,
+        60,
+        80
+      ],
+      "spatial_size": [
+        60,
+        80
+      ],
+      "channels": 128,
+      "downsampling_factor": [
+        8,
+        8
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 22,
+      "segmentation_score": 0.7046874999999999
+    },
+    {
+      "conv_name": "/model.22/cv2/cv2.1/conv/Conv_output_0",
+      "output_name": "/model.22/cv2/cv2.1/act/Mul_output_0",
+      "shape": [
+        1,
+        128,
+        60,
+        80
+      ],
+      "spatial_size": [
+        60,
+        80
+      ],
+      "channels": 128,
+      "downsampling_factor": [
+        8,
+        8
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 22,
+      "segmentation_score": 0.7046874999999999
+    },
+    {
+      "conv_name": "/model.22/cv3/cv3.0/cv1/conv/Conv_output_0",
+      "output_name": "/model.22/cv3/cv3.0/cv1/act/Mul_output_0",
+      "shape": [
+        1,
+        64,
+        60,
+        80
+      ],
+      "spatial_size": [
+        60,
+        80
+      ],
+      "channels": 64,
+      "downsampling_factor": [
+        8,
+        8
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 22,
+      "segmentation_score": 0.7046874999999999
+    },
+    {
+      "conv_name": "/model.22/cv3/cv3.0/cv2/conv/Conv_output_0",
+      "output_name": "/model.22/cv3/cv3.0/cv2/act/Mul_output_0",
+      "shape": [
+        1,
+        64,
+        60,
+        80
+      ],
+      "spatial_size": [
+        60,
+        80
+      ],
+      "channels": 64,
+      "downsampling_factor": [
+        8,
+        8
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 22,
+      "segmentation_score": 0.7046874999999999
+    },
+    {
+      "conv_name": "/model.22/cv3/cv3.0/m/m.0/cv1/conv/Conv_output_0",
+      "output_name": "/model.22/cv3/cv3.0/m/m.0/cv1/act/Mul_output_0",
+      "shape": [
+        1,
+        64,
+        60,
+        80
+      ],
+      "spatial_size": [
+        60,
+        80
+      ],
+      "channels": 64,
+      "downsampling_factor": [
+        8,
+        8
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 22,
+      "segmentation_score": 0.7046874999999999
+    },
+    {
+      "conv_name": "/model.22/cv3/cv3.0/m/m.0/cv2/conv/Conv_output_0",
+      "output_name": "/model.22/cv3/cv3.0/m/m.0/cv2/act/Mul_output_0",
+      "shape": [
+        1,
+        64,
+        60,
+        80
+      ],
+      "spatial_size": [
+        60,
+        80
+      ],
+      "channels": 64,
+      "downsampling_factor": [
+        8,
+        8
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 22,
+      "segmentation_score": 0.7046874999999999
+    },
+    {
+      "conv_name": "/model.22/cv3/cv3.0/m/m.1/cv1/conv/Conv_output_0",
+      "output_name": "/model.22/cv3/cv3.0/m/m.1/cv1/act/Mul_output_0",
+      "shape": [
+        1,
+        64,
+        60,
+        80
+      ],
+      "spatial_size": [
+        60,
+        80
+      ],
+      "channels": 64,
+      "downsampling_factor": [
+        8,
+        8
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 22,
+      "segmentation_score": 0.7046874999999999
+    },
+    {
+      "conv_name": "/model.22/cv3/cv3.0/m/m.1/cv2/conv/Conv_output_0",
+      "output_name": "/model.22/cv3/cv3.0/m/m.1/cv2/act/Mul_output_0",
+      "shape": [
+        1,
+        64,
+        60,
+        80
+      ],
+      "spatial_size": [
+        60,
+        80
+      ],
+      "channels": 64,
+      "downsampling_factor": [
+        8,
+        8
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 22,
+      "segmentation_score": 0.7046874999999999
+    },
+    {
+      "conv_name": "/model.22/cv3/cv3.0/cv3/conv/Conv_output_0",
+      "output_name": "/model.22/cv3/cv3.0/cv3/act/Mul_output_0",
+      "shape": [
+        1,
+        128,
+        60,
+        80
+      ],
+      "spatial_size": [
+        60,
+        80
+      ],
+      "channels": 128,
+      "downsampling_factor": [
+        8,
+        8
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 22,
+      "segmentation_score": 0.7046874999999999
+    },
+    {
+      "conv_name": "/model.22/cv3/cv3.1/conv/Conv_output_0",
+      "output_name": "/model.22/cv3/cv3.1/act/Mul_output_0",
+      "shape": [
+        1,
+        128,
+        60,
+        80
+      ],
+      "spatial_size": [
+        60,
+        80
+      ],
+      "channels": 128,
+      "downsampling_factor": [
+        8,
+        8
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 22,
+      "segmentation_score": 0.7046874999999999
+    },
+    {
+      "conv_name": "/model.23/cv1/conv/Conv_output_0",
+      "output_name": "/model.23/cv1/act/Mul_output_0",
+      "shape": [
+        1,
+        256,
+        30,
+        40
+      ],
+      "spatial_size": [
+        30,
+        40
+      ],
+      "channels": 256,
+      "downsampling_factor": [
+        16,
+        16
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 23,
+      "segmentation_score": 0.701171875
+    },
+    {
+      "conv_name": "/model.23/cv2/conv/Conv_output_0",
+      "output_name": "/model.23/cv2/act/Mul_output_0",
+      "shape": [
+        1,
+        256,
+        30,
+        40
+      ],
+      "spatial_size": [
+        30,
+        40
+      ],
+      "channels": 256,
+      "downsampling_factor": [
+        16,
+        16
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 23,
+      "segmentation_score": 0.701171875
+    },
+    {
+      "conv_name": "/model.15/conv/Conv_output_0",
+      "output_name": "/model.15/act/Mul_output_0",
+      "shape": [
+        1,
+        64,
+        240,
+        320
+      ],
+      "spatial_size": [
+        240,
+        320
+      ],
+      "channels": 64,
+      "downsampling_factor": [
+        2,
+        2
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 15,
+      "segmentation_score": 0.695
+    },
+    {
+      "conv_name": "/model.22/cv4/conv/Conv_output_0",
+      "output_name": "/model.22/cv4/act/Mul_output_0",
+      "shape": [
+        1,
+        512,
+        60,
+        80
+      ],
+      "spatial_size": [
+        60,
+        80
+      ],
+      "channels": 512,
+      "downsampling_factor": [
+        8,
+        8
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 22,
+      "segmentation_score": 0.6646875000000001
+    },
+    {
+      "conv_name": "/model.17/conv/Conv_output_0",
+      "output_name": "/model.17/act/Mul_output_0",
+      "shape": [
+        1,
+        128,
+        120,
+        160
+      ],
+      "spatial_size": [
+        120,
+        160
+      ],
+      "channels": 128,
+      "downsampling_factor": [
+        4,
+        4
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 17,
+      "segmentation_score": 0.63875
+    },
+    {
+      "conv_name": "/model.19/cv1/conv/Conv_output_0",
+      "output_name": "/model.19/cv1/act/Mul_output_0",
+      "shape": [
+        1,
+        128,
+        120,
+        160
+      ],
+      "spatial_size": [
+        120,
+        160
+      ],
+      "channels": 128,
+      "downsampling_factor": [
+        4,
+        4
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 19,
+      "segmentation_score": 0.63875
+    },
+    {
+      "conv_name": "/model.19/cv2/cv2.0/cv3/conv/Conv_output_0",
+      "output_name": "/model.19/cv2/cv2.0/cv3/act/Mul_output_0",
+      "shape": [
+        1,
+        64,
+        120,
+        160
+      ],
+      "spatial_size": [
+        120,
+        160
+      ],
+      "channels": 64,
+      "downsampling_factor": [
+        4,
+        4
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 19,
+      "segmentation_score": 0.63875
+    },
+    {
+      "conv_name": "/model.19/cv2/cv2.1/conv/Conv_output_0",
+      "output_name": "/model.19/cv2/cv2.1/act/Mul_output_0",
+      "shape": [
+        1,
+        64,
+        120,
+        160
+      ],
+      "spatial_size": [
+        120,
+        160
+      ],
+      "channels": 64,
+      "downsampling_factor": [
+        4,
+        4
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 19,
+      "segmentation_score": 0.63875
+    },
+    {
+      "conv_name": "/model.19/cv3/cv3.0/cv3/conv/Conv_output_0",
+      "output_name": "/model.19/cv3/cv3.0/cv3/act/Mul_output_0",
+      "shape": [
+        1,
+        64,
+        120,
+        160
+      ],
+      "spatial_size": [
+        120,
+        160
+      ],
+      "channels": 64,
+      "downsampling_factor": [
+        4,
+        4
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 19,
+      "segmentation_score": 0.63875
+    },
+    {
+      "conv_name": "/model.19/cv3/cv3.1/conv/Conv_output_0",
+      "output_name": "/model.19/cv3/cv3.1/act/Mul_output_0",
+      "shape": [
+        1,
+        64,
+        120,
+        160
+      ],
+      "spatial_size": [
+        120,
+        160
+      ],
+      "channels": 64,
+      "downsampling_factor": [
+        4,
+        4
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 19,
+      "segmentation_score": 0.63875
+    },
+    {
+      "conv_name": "/model.19/cv4/conv/Conv_output_0",
+      "output_name": "/model.19/cv4/act/Mul_output_0",
+      "shape": [
+        1,
+        256,
+        120,
+        160
+      ],
+      "spatial_size": [
+        120,
+        160
+      ],
+      "channels": 256,
+      "downsampling_factor": [
+        4,
+        4
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 19,
+      "segmentation_score": 0.63875
+    },
+    {
+      "conv_name": "/model.35/cv1/conv/Conv_output_0",
+      "output_name": "/model.35/cv1/act/Mul_output_0",
+      "shape": [
+        1,
+        256,
+        60,
+        80
+      ],
+      "spatial_size": [
+        60,
+        80
+      ],
+      "channels": 256,
+      "downsampling_factor": [
+        8,
+        8
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 35,
+      "segmentation_score": 0.6146875
+    },
+    {
+      "conv_name": "/model.35/cv2/cv2.0/cv1/conv/Conv_output_0",
+      "output_name": "/model.35/cv2/cv2.0/cv1/act/Mul_output_0",
+      "shape": [
+        1,
+        64,
+        60,
+        80
+      ],
+      "spatial_size": [
+        60,
+        80
+      ],
+      "channels": 64,
+      "downsampling_factor": [
+        8,
+        8
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 35,
+      "segmentation_score": 0.6146875
+    },
+    {
+      "conv_name": "/model.35/cv2/cv2.0/cv2/conv/Conv_output_0",
+      "output_name": "/model.35/cv2/cv2.0/cv2/act/Mul_output_0",
+      "shape": [
+        1,
+        64,
+        60,
+        80
+      ],
+      "spatial_size": [
+        60,
+        80
+      ],
+      "channels": 64,
+      "downsampling_factor": [
+        8,
+        8
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 35,
+      "segmentation_score": 0.6146875
+    },
+    {
+      "conv_name": "/model.35/cv2/cv2.0/m/m.0/cv1/conv/Conv_output_0",
+      "output_name": "/model.35/cv2/cv2.0/m/m.0/cv1/act/Mul_output_0",
+      "shape": [
+        1,
+        64,
+        60,
+        80
+      ],
+      "spatial_size": [
+        60,
+        80
+      ],
+      "channels": 64,
+      "downsampling_factor": [
+        8,
+        8
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 35,
+      "segmentation_score": 0.6146875
+    },
+    {
+      "conv_name": "/model.35/cv2/cv2.0/m/m.0/cv2/conv/Conv_output_0",
+      "output_name": "/model.35/cv2/cv2.0/m/m.0/cv2/act/Mul_output_0",
+      "shape": [
+        1,
+        64,
+        60,
+        80
+      ],
+      "spatial_size": [
+        60,
+        80
+      ],
+      "channels": 64,
+      "downsampling_factor": [
+        8,
+        8
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 35,
+      "segmentation_score": 0.6146875
+    },
+    {
+      "conv_name": "/model.35/cv2/cv2.0/m/m.1/cv1/conv/Conv_output_0",
+      "output_name": "/model.35/cv2/cv2.0/m/m.1/cv1/act/Mul_output_0",
+      "shape": [
+        1,
+        64,
+        60,
+        80
+      ],
+      "spatial_size": [
+        60,
+        80
+      ],
+      "channels": 64,
+      "downsampling_factor": [
+        8,
+        8
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 35,
+      "segmentation_score": 0.6146875
+    },
+    {
+      "conv_name": "/model.35/cv2/cv2.0/m/m.1/cv2/conv/Conv_output_0",
+      "output_name": "/model.35/cv2/cv2.0/m/m.1/cv2/act/Mul_output_0",
+      "shape": [
+        1,
+        64,
+        60,
+        80
+      ],
+      "spatial_size": [
+        60,
+        80
+      ],
+      "channels": 64,
+      "downsampling_factor": [
+        8,
+        8
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 35,
+      "segmentation_score": 0.6146875
+    },
+    {
+      "conv_name": "/model.35/cv2/cv2.0/cv3/conv/Conv_output_0",
+      "output_name": "/model.35/cv2/cv2.0/cv3/act/Mul_output_0",
+      "shape": [
+        1,
+        128,
+        60,
+        80
+      ],
+      "spatial_size": [
+        60,
+        80
+      ],
+      "channels": 128,
+      "downsampling_factor": [
+        8,
+        8
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 35,
+      "segmentation_score": 0.6146875
+    },
+    {
+      "conv_name": "/model.35/cv2/cv2.1/conv/Conv_output_0",
+      "output_name": "/model.35/cv2/cv2.1/act/Mul_output_0",
+      "shape": [
+        1,
+        128,
+        60,
+        80
+      ],
+      "spatial_size": [
+        60,
+        80
+      ],
+      "channels": 128,
+      "downsampling_factor": [
+        8,
+        8
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 35,
+      "segmentation_score": 0.6146875
+    },
+    {
+      "conv_name": "/model.35/cv3/cv3.0/cv1/conv/Conv_output_0",
+      "output_name": "/model.35/cv3/cv3.0/cv1/act/Mul_output_0",
+      "shape": [
+        1,
+        64,
+        60,
+        80
+      ],
+      "spatial_size": [
+        60,
+        80
+      ],
+      "channels": 64,
+      "downsampling_factor": [
+        8,
+        8
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 35,
+      "segmentation_score": 0.6146875
+    },
+    {
+      "conv_name": "/model.35/cv3/cv3.0/cv2/conv/Conv_output_0",
+      "output_name": "/model.35/cv3/cv3.0/cv2/act/Mul_output_0",
+      "shape": [
+        1,
+        64,
+        60,
+        80
+      ],
+      "spatial_size": [
+        60,
+        80
+      ],
+      "channels": 64,
+      "downsampling_factor": [
+        8,
+        8
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 35,
+      "segmentation_score": 0.6146875
+    },
+    {
+      "conv_name": "/model.35/cv3/cv3.0/m/m.0/cv1/conv/Conv_output_0",
+      "output_name": "/model.35/cv3/cv3.0/m/m.0/cv1/act/Mul_output_0",
+      "shape": [
+        1,
+        64,
+        60,
+        80
+      ],
+      "spatial_size": [
+        60,
+        80
+      ],
+      "channels": 64,
+      "downsampling_factor": [
+        8,
+        8
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 35,
+      "segmentation_score": 0.6146875
+    },
+    {
+      "conv_name": "/model.35/cv3/cv3.0/m/m.0/cv2/conv/Conv_output_0",
+      "output_name": "/model.35/cv3/cv3.0/m/m.0/cv2/act/Mul_output_0",
+      "shape": [
+        1,
+        64,
+        60,
+        80
+      ],
+      "spatial_size": [
+        60,
+        80
+      ],
+      "channels": 64,
+      "downsampling_factor": [
+        8,
+        8
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 35,
+      "segmentation_score": 0.6146875
+    },
+    {
+      "conv_name": "/model.35/cv3/cv3.0/m/m.1/cv1/conv/Conv_output_0",
+      "output_name": "/model.35/cv3/cv3.0/m/m.1/cv1/act/Mul_output_0",
+      "shape": [
+        1,
+        64,
+        60,
+        80
+      ],
+      "spatial_size": [
+        60,
+        80
+      ],
+      "channels": 64,
+      "downsampling_factor": [
+        8,
+        8
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 35,
+      "segmentation_score": 0.6146875
+    },
+    {
+      "conv_name": "/model.35/cv3/cv3.0/m/m.1/cv2/conv/Conv_output_0",
+      "output_name": "/model.35/cv3/cv3.0/m/m.1/cv2/act/Mul_output_0",
+      "shape": [
+        1,
+        64,
+        60,
+        80
+      ],
+      "spatial_size": [
+        60,
+        80
+      ],
+      "channels": 64,
+      "downsampling_factor": [
+        8,
+        8
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 35,
+      "segmentation_score": 0.6146875
+    },
+    {
+      "conv_name": "/model.35/cv3/cv3.0/cv3/conv/Conv_output_0",
+      "output_name": "/model.35/cv3/cv3.0/cv3/act/Mul_output_0",
+      "shape": [
+        1,
+        128,
+        60,
+        80
+      ],
+      "spatial_size": [
+        60,
+        80
+      ],
+      "channels": 128,
+      "downsampling_factor": [
+        8,
+        8
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 35,
+      "segmentation_score": 0.6146875
+    },
+    {
+      "conv_name": "/model.35/cv3/cv3.1/conv/Conv_output_0",
+      "output_name": "/model.35/cv3/cv3.1/act/Mul_output_0",
+      "shape": [
+        1,
+        128,
+        60,
+        80
+      ],
+      "spatial_size": [
+        60,
+        80
+      ],
+      "channels": 128,
+      "downsampling_factor": [
+        8,
+        8
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 35,
+      "segmentation_score": 0.6146875
+    },
+    {
+      "conv_name": "/model.35/cv4/conv/Conv_output_0",
+      "output_name": "/model.35/cv4/act/Mul_output_0",
+      "shape": [
+        1,
+        256,
+        60,
+        80
+      ],
+      "spatial_size": [
+        60,
+        80
+      ],
+      "channels": 256,
+      "downsampling_factor": [
+        8,
+        8
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 35,
+      "segmentation_score": 0.6146875
+    },
+    {
+      "conv_name": "/model.42/cv2.0/cv2.0.0/conv/Conv_output_0",
+      "output_name": "/model.42/cv2.0/cv2.0.0/act/Mul_output_0",
+      "shape": [
+        1,
+        64,
+        60,
+        80
+      ],
+      "spatial_size": [
+        60,
+        80
+      ],
+      "channels": 64,
+      "downsampling_factor": [
+        8,
+        8
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 42,
+      "segmentation_score": 0.6146875
+    },
+    {
+      "conv_name": "/model.42/cv3.0/cv3.0.0/conv/Conv_output_0",
+      "output_name": "/model.42/cv3.0/cv3.0.0/act/Mul_output_0",
+      "shape": [
+        1,
+        256,
+        60,
+        80
+      ],
+      "spatial_size": [
+        60,
+        80
+      ],
+      "channels": 256,
+      "downsampling_factor": [
+        8,
+        8
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 42,
+      "segmentation_score": 0.6146875
+    },
+    {
+      "conv_name": "/model.42/cv2.0/cv2.0.1/conv/Conv_output_0",
+      "output_name": "/model.42/cv2.0/cv2.0.1/act/Mul_output_0",
+      "shape": [
+        1,
+        64,
+        60,
+        80
+      ],
+      "spatial_size": [
+        60,
+        80
+      ],
+      "channels": 64,
+      "downsampling_factor": [
+        8,
+        8
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 42,
+      "segmentation_score": 0.6146875
+    },
+    {
+      "conv_name": "/model.42/cv3.0/cv3.0.1/conv/Conv_output_0",
+      "output_name": "/model.42/cv3.0/cv3.0.1/act/Mul_output_0",
+      "shape": [
+        1,
+        256,
+        60,
+        80
+      ],
+      "spatial_size": [
+        60,
+        80
+      ],
+      "channels": 256,
+      "downsampling_factor": [
+        8,
+        8
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 42,
+      "segmentation_score": 0.6146875
+    },
+    {
+      "conv_name": "/model.25/cv2/cv2.0/cv1/conv/Conv_output_0",
+      "output_name": "/model.25/cv2/cv2.0/cv1/act/Mul_output_0",
+      "shape": [
+        1,
+        128,
+        30,
+        40
+      ],
+      "spatial_size": [
+        30,
+        40
+      ],
+      "channels": 128,
+      "downsampling_factor": [
+        16,
+        16
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 25,
+      "segmentation_score": 0.6111718749999999
+    },
+    {
+      "conv_name": "/model.25/cv2/cv2.0/cv2/conv/Conv_output_0",
+      "output_name": "/model.25/cv2/cv2.0/cv2/act/Mul_output_0",
+      "shape": [
+        1,
+        128,
+        30,
+        40
+      ],
+      "spatial_size": [
+        30,
+        40
+      ],
+      "channels": 128,
+      "downsampling_factor": [
+        16,
+        16
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 25,
+      "segmentation_score": 0.6111718749999999
+    },
+    {
+      "conv_name": "/model.25/cv2/cv2.0/m/m.0/cv1/conv/Conv_output_0",
+      "output_name": "/model.25/cv2/cv2.0/m/m.0/cv1/act/Mul_output_0",
+      "shape": [
+        1,
+        128,
+        30,
+        40
+      ],
+      "spatial_size": [
+        30,
+        40
+      ],
+      "channels": 128,
+      "downsampling_factor": [
+        16,
+        16
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 25,
+      "segmentation_score": 0.6111718749999999
+    },
+    {
+      "conv_name": "/model.25/cv2/cv2.0/m/m.0/cv2/conv/Conv_output_0",
+      "output_name": "/model.25/cv2/cv2.0/m/m.0/cv2/act/Mul_output_0",
+      "shape": [
+        1,
+        128,
+        30,
+        40
+      ],
+      "spatial_size": [
+        30,
+        40
+      ],
+      "channels": 128,
+      "downsampling_factor": [
+        16,
+        16
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 25,
+      "segmentation_score": 0.6111718749999999
+    },
+    {
+      "conv_name": "/model.25/cv2/cv2.0/m/m.1/cv1/conv/Conv_output_0",
+      "output_name": "/model.25/cv2/cv2.0/m/m.1/cv1/act/Mul_output_0",
+      "shape": [
+        1,
+        128,
+        30,
+        40
+      ],
+      "spatial_size": [
+        30,
+        40
+      ],
+      "channels": 128,
+      "downsampling_factor": [
+        16,
+        16
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 25,
+      "segmentation_score": 0.6111718749999999
+    },
+    {
+      "conv_name": "/model.25/cv2/cv2.0/m/m.1/cv2/conv/Conv_output_0",
+      "output_name": "/model.25/cv2/cv2.0/m/m.1/cv2/act/Mul_output_0",
+      "shape": [
+        1,
+        128,
+        30,
+        40
+      ],
+      "spatial_size": [
+        30,
+        40
+      ],
+      "channels": 128,
+      "downsampling_factor": [
+        16,
+        16
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 25,
+      "segmentation_score": 0.6111718749999999
+    },
+    {
+      "conv_name": "/model.25/cv2/cv2.0/cv3/conv/Conv_output_0",
+      "output_name": "/model.25/cv2/cv2.0/cv3/act/Mul_output_0",
+      "shape": [
+        1,
+        256,
+        30,
+        40
+      ],
+      "spatial_size": [
+        30,
+        40
+      ],
+      "channels": 256,
+      "downsampling_factor": [
+        16,
+        16
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 25,
+      "segmentation_score": 0.6111718749999999
+    },
+    {
+      "conv_name": "/model.25/cv2/cv2.1/conv/Conv_output_0",
+      "output_name": "/model.25/cv2/cv2.1/act/Mul_output_0",
+      "shape": [
+        1,
+        256,
+        30,
+        40
+      ],
+      "spatial_size": [
+        30,
+        40
+      ],
+      "channels": 256,
+      "downsampling_factor": [
+        16,
+        16
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 25,
+      "segmentation_score": 0.6111718749999999
+    },
+    {
+      "conv_name": "/model.25/cv3/cv3.0/cv1/conv/Conv_output_0",
+      "output_name": "/model.25/cv3/cv3.0/cv1/act/Mul_output_0",
+      "shape": [
+        1,
+        128,
+        30,
+        40
+      ],
+      "spatial_size": [
+        30,
+        40
+      ],
+      "channels": 128,
+      "downsampling_factor": [
+        16,
+        16
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 25,
+      "segmentation_score": 0.6111718749999999
+    },
+    {
+      "conv_name": "/model.25/cv3/cv3.0/cv2/conv/Conv_output_0",
+      "output_name": "/model.25/cv3/cv3.0/cv2/act/Mul_output_0",
+      "shape": [
+        1,
+        128,
+        30,
+        40
+      ],
+      "spatial_size": [
+        30,
+        40
+      ],
+      "channels": 128,
+      "downsampling_factor": [
+        16,
+        16
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 25,
+      "segmentation_score": 0.6111718749999999
+    },
+    {
+      "conv_name": "/model.25/cv3/cv3.0/m/m.0/cv1/conv/Conv_output_0",
+      "output_name": "/model.25/cv3/cv3.0/m/m.0/cv1/act/Mul_output_0",
+      "shape": [
+        1,
+        128,
+        30,
+        40
+      ],
+      "spatial_size": [
+        30,
+        40
+      ],
+      "channels": 128,
+      "downsampling_factor": [
+        16,
+        16
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 25,
+      "segmentation_score": 0.6111718749999999
+    },
+    {
+      "conv_name": "/model.25/cv3/cv3.0/m/m.0/cv2/conv/Conv_output_0",
+      "output_name": "/model.25/cv3/cv3.0/m/m.0/cv2/act/Mul_output_0",
+      "shape": [
+        1,
+        128,
+        30,
+        40
+      ],
+      "spatial_size": [
+        30,
+        40
+      ],
+      "channels": 128,
+      "downsampling_factor": [
+        16,
+        16
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 25,
+      "segmentation_score": 0.6111718749999999
+    },
+    {
+      "conv_name": "/model.25/cv3/cv3.0/m/m.1/cv1/conv/Conv_output_0",
+      "output_name": "/model.25/cv3/cv3.0/m/m.1/cv1/act/Mul_output_0",
+      "shape": [
+        1,
+        128,
+        30,
+        40
+      ],
+      "spatial_size": [
+        30,
+        40
+      ],
+      "channels": 128,
+      "downsampling_factor": [
+        16,
+        16
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 25,
+      "segmentation_score": 0.6111718749999999
+    },
+    {
+      "conv_name": "/model.25/cv3/cv3.0/m/m.1/cv2/conv/Conv_output_0",
+      "output_name": "/model.25/cv3/cv3.0/m/m.1/cv2/act/Mul_output_0",
+      "shape": [
+        1,
+        128,
+        30,
+        40
+      ],
+      "spatial_size": [
+        30,
+        40
+      ],
+      "channels": 128,
+      "downsampling_factor": [
+        16,
+        16
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 25,
+      "segmentation_score": 0.6111718749999999
+    },
+    {
+      "conv_name": "/model.25/cv3/cv3.0/cv3/conv/Conv_output_0",
+      "output_name": "/model.25/cv3/cv3.0/cv3/act/Mul_output_0",
+      "shape": [
+        1,
+        256,
+        30,
+        40
+      ],
+      "spatial_size": [
+        30,
+        40
+      ],
+      "channels": 256,
+      "downsampling_factor": [
+        16,
+        16
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 25,
+      "segmentation_score": 0.6111718749999999
+    },
+    {
+      "conv_name": "/model.25/cv3/cv3.1/conv/Conv_output_0",
+      "output_name": "/model.25/cv3/cv3.1/act/Mul_output_0",
+      "shape": [
+        1,
+        256,
+        30,
+        40
+      ],
+      "spatial_size": [
+        30,
+        40
+      ],
+      "channels": 256,
+      "downsampling_factor": [
+        16,
+        16
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 25,
+      "segmentation_score": 0.6111718749999999
+    },
+    {
+      "conv_name": "/model.32/cv2/cv2.0/cv1/conv/Conv_output_0",
+      "output_name": "/model.32/cv2/cv2.0/cv1/act/Mul_output_0",
+      "shape": [
+        1,
+        128,
+        30,
+        40
+      ],
+      "spatial_size": [
+        30,
+        40
+      ],
+      "channels": 128,
+      "downsampling_factor": [
+        16,
+        16
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 32,
+      "segmentation_score": 0.6111718749999999
+    },
+    {
+      "conv_name": "/model.32/cv2/cv2.0/cv2/conv/Conv_output_0",
+      "output_name": "/model.32/cv2/cv2.0/cv2/act/Mul_output_0",
+      "shape": [
+        1,
+        128,
+        30,
+        40
+      ],
+      "spatial_size": [
+        30,
+        40
+      ],
+      "channels": 128,
+      "downsampling_factor": [
+        16,
+        16
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 32,
+      "segmentation_score": 0.6111718749999999
+    },
+    {
+      "conv_name": "/model.32/cv2/cv2.0/m/m.0/cv1/conv/Conv_output_0",
+      "output_name": "/model.32/cv2/cv2.0/m/m.0/cv1/act/Mul_output_0",
+      "shape": [
+        1,
+        128,
+        30,
+        40
+      ],
+      "spatial_size": [
+        30,
+        40
+      ],
+      "channels": 128,
+      "downsampling_factor": [
+        16,
+        16
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 32,
+      "segmentation_score": 0.6111718749999999
+    },
+    {
+      "conv_name": "/model.32/cv2/cv2.0/m/m.0/cv2/conv/Conv_output_0",
+      "output_name": "/model.32/cv2/cv2.0/m/m.0/cv2/act/Mul_output_0",
+      "shape": [
+        1,
+        128,
+        30,
+        40
+      ],
+      "spatial_size": [
+        30,
+        40
+      ],
+      "channels": 128,
+      "downsampling_factor": [
+        16,
+        16
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 32,
+      "segmentation_score": 0.6111718749999999
+    },
+    {
+      "conv_name": "/model.32/cv2/cv2.0/m/m.1/cv1/conv/Conv_output_0",
+      "output_name": "/model.32/cv2/cv2.0/m/m.1/cv1/act/Mul_output_0",
+      "shape": [
+        1,
+        128,
+        30,
+        40
+      ],
+      "spatial_size": [
+        30,
+        40
+      ],
+      "channels": 128,
+      "downsampling_factor": [
+        16,
+        16
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 32,
+      "segmentation_score": 0.6111718749999999
+    },
+    {
+      "conv_name": "/model.32/cv2/cv2.0/m/m.1/cv2/conv/Conv_output_0",
+      "output_name": "/model.32/cv2/cv2.0/m/m.1/cv2/act/Mul_output_0",
+      "shape": [
+        1,
+        128,
+        30,
+        40
+      ],
+      "spatial_size": [
+        30,
+        40
+      ],
+      "channels": 128,
+      "downsampling_factor": [
+        16,
+        16
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 32,
+      "segmentation_score": 0.6111718749999999
+    },
+    {
+      "conv_name": "/model.32/cv2/cv2.0/cv3/conv/Conv_output_0",
+      "output_name": "/model.32/cv2/cv2.0/cv3/act/Mul_output_0",
+      "shape": [
+        1,
+        256,
+        30,
+        40
+      ],
+      "spatial_size": [
+        30,
+        40
+      ],
+      "channels": 256,
+      "downsampling_factor": [
+        16,
+        16
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 32,
+      "segmentation_score": 0.6111718749999999
+    },
+    {
+      "conv_name": "/model.32/cv2/cv2.1/conv/Conv_output_0",
+      "output_name": "/model.32/cv2/cv2.1/act/Mul_output_0",
+      "shape": [
+        1,
+        256,
+        30,
+        40
+      ],
+      "spatial_size": [
+        30,
+        40
+      ],
+      "channels": 256,
+      "downsampling_factor": [
+        16,
+        16
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 32,
+      "segmentation_score": 0.6111718749999999
+    },
+    {
+      "conv_name": "/model.32/cv3/cv3.0/cv1/conv/Conv_output_0",
+      "output_name": "/model.32/cv3/cv3.0/cv1/act/Mul_output_0",
+      "shape": [
+        1,
+        128,
+        30,
+        40
+      ],
+      "spatial_size": [
+        30,
+        40
+      ],
+      "channels": 128,
+      "downsampling_factor": [
+        16,
+        16
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 32,
+      "segmentation_score": 0.6111718749999999
+    },
+    {
+      "conv_name": "/model.32/cv3/cv3.0/cv2/conv/Conv_output_0",
+      "output_name": "/model.32/cv3/cv3.0/cv2/act/Mul_output_0",
+      "shape": [
+        1,
+        128,
+        30,
+        40
+      ],
+      "spatial_size": [
+        30,
+        40
+      ],
+      "channels": 128,
+      "downsampling_factor": [
+        16,
+        16
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 32,
+      "segmentation_score": 0.6111718749999999
+    },
+    {
+      "conv_name": "/model.32/cv3/cv3.0/m/m.0/cv1/conv/Conv_output_0",
+      "output_name": "/model.32/cv3/cv3.0/m/m.0/cv1/act/Mul_output_0",
+      "shape": [
+        1,
+        128,
+        30,
+        40
+      ],
+      "spatial_size": [
+        30,
+        40
+      ],
+      "channels": 128,
+      "downsampling_factor": [
+        16,
+        16
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 32,
+      "segmentation_score": 0.6111718749999999
+    },
+    {
+      "conv_name": "/model.32/cv3/cv3.0/m/m.0/cv2/conv/Conv_output_0",
+      "output_name": "/model.32/cv3/cv3.0/m/m.0/cv2/act/Mul_output_0",
+      "shape": [
+        1,
+        128,
+        30,
+        40
+      ],
+      "spatial_size": [
+        30,
+        40
+      ],
+      "channels": 128,
+      "downsampling_factor": [
+        16,
+        16
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 32,
+      "segmentation_score": 0.6111718749999999
+    },
+    {
+      "conv_name": "/model.32/cv3/cv3.0/m/m.1/cv1/conv/Conv_output_0",
+      "output_name": "/model.32/cv3/cv3.0/m/m.1/cv1/act/Mul_output_0",
+      "shape": [
+        1,
+        128,
+        30,
+        40
+      ],
+      "spatial_size": [
+        30,
+        40
+      ],
+      "channels": 128,
+      "downsampling_factor": [
+        16,
+        16
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 32,
+      "segmentation_score": 0.6111718749999999
+    },
+    {
+      "conv_name": "/model.32/cv3/cv3.0/m/m.1/cv2/conv/Conv_output_0",
+      "output_name": "/model.32/cv3/cv3.0/m/m.1/cv2/act/Mul_output_0",
+      "shape": [
+        1,
+        128,
+        30,
+        40
+      ],
+      "spatial_size": [
+        30,
+        40
+      ],
+      "channels": 128,
+      "downsampling_factor": [
+        16,
+        16
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 32,
+      "segmentation_score": 0.6111718749999999
+    },
+    {
+      "conv_name": "/model.32/cv3/cv3.0/cv3/conv/Conv_output_0",
+      "output_name": "/model.32/cv3/cv3.0/cv3/act/Mul_output_0",
+      "shape": [
+        1,
+        256,
+        30,
+        40
+      ],
+      "spatial_size": [
+        30,
+        40
+      ],
+      "channels": 256,
+      "downsampling_factor": [
+        16,
+        16
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 32,
+      "segmentation_score": 0.6111718749999999
+    },
+    {
+      "conv_name": "/model.32/cv3/cv3.1/conv/Conv_output_0",
+      "output_name": "/model.32/cv3/cv3.1/act/Mul_output_0",
+      "shape": [
+        1,
+        256,
+        30,
+        40
+      ],
+      "spatial_size": [
+        30,
+        40
+      ],
+      "channels": 256,
+      "downsampling_factor": [
+        16,
+        16
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 32,
+      "segmentation_score": 0.6111718749999999
+    },
+    {
+      "conv_name": "/model.36/cv1/conv/Conv_output_0",
+      "output_name": "/model.36/cv1/act/Mul_output_0",
+      "shape": [
+        1,
+        128,
+        30,
+        40
+      ],
+      "spatial_size": [
+        30,
+        40
+      ],
+      "channels": 128,
+      "downsampling_factor": [
+        16,
+        16
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 36,
+      "segmentation_score": 0.6111718749999999
+    },
+    {
+      "conv_name": "/model.36/cv2/conv/Conv_output_0",
+      "output_name": "/model.36/cv2/act/Mul_output_0",
+      "shape": [
+        1,
+        128,
+        30,
+        40
+      ],
+      "spatial_size": [
+        30,
+        40
+      ],
+      "channels": 128,
+      "downsampling_factor": [
+        16,
+        16
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 36,
+      "segmentation_score": 0.6111718749999999
+    },
+    {
+      "conv_name": "/model.38/cv2/cv2.0/cv1/conv/Conv_output_0",
+      "output_name": "/model.38/cv2/cv2.0/cv1/act/Mul_output_0",
+      "shape": [
+        1,
+        128,
+        30,
+        40
+      ],
+      "spatial_size": [
+        30,
+        40
+      ],
+      "channels": 128,
+      "downsampling_factor": [
+        16,
+        16
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 38,
+      "segmentation_score": 0.6111718749999999
+    },
+    {
+      "conv_name": "/model.38/cv2/cv2.0/cv2/conv/Conv_output_0",
+      "output_name": "/model.38/cv2/cv2.0/cv2/act/Mul_output_0",
+      "shape": [
+        1,
+        128,
+        30,
+        40
+      ],
+      "spatial_size": [
+        30,
+        40
+      ],
+      "channels": 128,
+      "downsampling_factor": [
+        16,
+        16
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 38,
+      "segmentation_score": 0.6111718749999999
+    },
+    {
+      "conv_name": "/model.38/cv2/cv2.0/m/m.0/cv1/conv/Conv_output_0",
+      "output_name": "/model.38/cv2/cv2.0/m/m.0/cv1/act/Mul_output_0",
+      "shape": [
+        1,
+        128,
+        30,
+        40
+      ],
+      "spatial_size": [
+        30,
+        40
+      ],
+      "channels": 128,
+      "downsampling_factor": [
+        16,
+        16
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 38,
+      "segmentation_score": 0.6111718749999999
+    },
+    {
+      "conv_name": "/model.38/cv2/cv2.0/m/m.0/cv2/conv/Conv_output_0",
+      "output_name": "/model.38/cv2/cv2.0/m/m.0/cv2/act/Mul_output_0",
+      "shape": [
+        1,
+        128,
+        30,
+        40
+      ],
+      "spatial_size": [
+        30,
+        40
+      ],
+      "channels": 128,
+      "downsampling_factor": [
+        16,
+        16
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 38,
+      "segmentation_score": 0.6111718749999999
+    },
+    {
+      "conv_name": "/model.38/cv2/cv2.0/m/m.1/cv1/conv/Conv_output_0",
+      "output_name": "/model.38/cv2/cv2.0/m/m.1/cv1/act/Mul_output_0",
+      "shape": [
+        1,
+        128,
+        30,
+        40
+      ],
+      "spatial_size": [
+        30,
+        40
+      ],
+      "channels": 128,
+      "downsampling_factor": [
+        16,
+        16
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 38,
+      "segmentation_score": 0.6111718749999999
+    },
+    {
+      "conv_name": "/model.38/cv2/cv2.0/m/m.1/cv2/conv/Conv_output_0",
+      "output_name": "/model.38/cv2/cv2.0/m/m.1/cv2/act/Mul_output_0",
+      "shape": [
+        1,
+        128,
+        30,
+        40
+      ],
+      "spatial_size": [
+        30,
+        40
+      ],
+      "channels": 128,
+      "downsampling_factor": [
+        16,
+        16
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 38,
+      "segmentation_score": 0.6111718749999999
+    },
+    {
+      "conv_name": "/model.38/cv2/cv2.0/cv3/conv/Conv_output_0",
+      "output_name": "/model.38/cv2/cv2.0/cv3/act/Mul_output_0",
+      "shape": [
+        1,
+        256,
+        30,
+        40
+      ],
+      "spatial_size": [
+        30,
+        40
+      ],
+      "channels": 256,
+      "downsampling_factor": [
+        16,
+        16
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 38,
+      "segmentation_score": 0.6111718749999999
+    },
+    {
+      "conv_name": "/model.38/cv2/cv2.1/conv/Conv_output_0",
+      "output_name": "/model.38/cv2/cv2.1/act/Mul_output_0",
+      "shape": [
+        1,
+        256,
+        30,
+        40
+      ],
+      "spatial_size": [
+        30,
+        40
+      ],
+      "channels": 256,
+      "downsampling_factor": [
+        16,
+        16
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 38,
+      "segmentation_score": 0.6111718749999999
+    },
+    {
+      "conv_name": "/model.38/cv3/cv3.0/cv1/conv/Conv_output_0",
+      "output_name": "/model.38/cv3/cv3.0/cv1/act/Mul_output_0",
+      "shape": [
+        1,
+        128,
+        30,
+        40
+      ],
+      "spatial_size": [
+        30,
+        40
+      ],
+      "channels": 128,
+      "downsampling_factor": [
+        16,
+        16
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 38,
+      "segmentation_score": 0.6111718749999999
+    },
+    {
+      "conv_name": "/model.38/cv3/cv3.0/cv2/conv/Conv_output_0",
+      "output_name": "/model.38/cv3/cv3.0/cv2/act/Mul_output_0",
+      "shape": [
+        1,
+        128,
+        30,
+        40
+      ],
+      "spatial_size": [
+        30,
+        40
+      ],
+      "channels": 128,
+      "downsampling_factor": [
+        16,
+        16
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 38,
+      "segmentation_score": 0.6111718749999999
+    },
+    {
+      "conv_name": "/model.38/cv3/cv3.0/m/m.0/cv1/conv/Conv_output_0",
+      "output_name": "/model.38/cv3/cv3.0/m/m.0/cv1/act/Mul_output_0",
+      "shape": [
+        1,
+        128,
+        30,
+        40
+      ],
+      "spatial_size": [
+        30,
+        40
+      ],
+      "channels": 128,
+      "downsampling_factor": [
+        16,
+        16
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 38,
+      "segmentation_score": 0.6111718749999999
+    },
+    {
+      "conv_name": "/model.38/cv3/cv3.0/m/m.0/cv2/conv/Conv_output_0",
+      "output_name": "/model.38/cv3/cv3.0/m/m.0/cv2/act/Mul_output_0",
+      "shape": [
+        1,
+        128,
+        30,
+        40
+      ],
+      "spatial_size": [
+        30,
+        40
+      ],
+      "channels": 128,
+      "downsampling_factor": [
+        16,
+        16
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 38,
+      "segmentation_score": 0.6111718749999999
+    },
+    {
+      "conv_name": "/model.38/cv3/cv3.0/m/m.1/cv1/conv/Conv_output_0",
+      "output_name": "/model.38/cv3/cv3.0/m/m.1/cv1/act/Mul_output_0",
+      "shape": [
+        1,
+        128,
+        30,
+        40
+      ],
+      "spatial_size": [
+        30,
+        40
+      ],
+      "channels": 128,
+      "downsampling_factor": [
+        16,
+        16
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 38,
+      "segmentation_score": 0.6111718749999999
+    },
+    {
+      "conv_name": "/model.38/cv3/cv3.0/m/m.1/cv2/conv/Conv_output_0",
+      "output_name": "/model.38/cv3/cv3.0/m/m.1/cv2/act/Mul_output_0",
+      "shape": [
+        1,
+        128,
+        30,
+        40
+      ],
+      "spatial_size": [
+        30,
+        40
+      ],
+      "channels": 128,
+      "downsampling_factor": [
+        16,
+        16
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 38,
+      "segmentation_score": 0.6111718749999999
+    },
+    {
+      "conv_name": "/model.38/cv3/cv3.0/cv3/conv/Conv_output_0",
+      "output_name": "/model.38/cv3/cv3.0/cv3/act/Mul_output_0",
+      "shape": [
+        1,
+        256,
+        30,
+        40
+      ],
+      "spatial_size": [
+        30,
+        40
+      ],
+      "channels": 256,
+      "downsampling_factor": [
+        16,
+        16
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 38,
+      "segmentation_score": 0.6111718749999999
+    },
+    {
+      "conv_name": "/model.38/cv3/cv3.1/conv/Conv_output_0",
+      "output_name": "/model.38/cv3/cv3.1/act/Mul_output_0",
+      "shape": [
+        1,
+        256,
+        30,
+        40
+      ],
+      "spatial_size": [
+        30,
+        40
+      ],
+      "channels": 256,
+      "downsampling_factor": [
+        16,
+        16
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 38,
+      "segmentation_score": 0.6111718749999999
+    },
+    {
+      "conv_name": "/model.42/cv2.1/cv2.1.0/conv/Conv_output_0",
+      "output_name": "/model.42/cv2.1/cv2.1.0/act/Mul_output_0",
+      "shape": [
+        1,
+        64,
+        30,
+        40
+      ],
+      "spatial_size": [
+        30,
+        40
+      ],
+      "channels": 64,
+      "downsampling_factor": [
+        16,
+        16
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 42,
+      "segmentation_score": 0.6111718749999999
+    },
+    {
+      "conv_name": "/model.42/cv3.1/cv3.1.0/conv/Conv_output_0",
+      "output_name": "/model.42/cv3.1/cv3.1.0/act/Mul_output_0",
+      "shape": [
+        1,
+        256,
+        30,
+        40
+      ],
+      "spatial_size": [
+        30,
+        40
+      ],
+      "channels": 256,
+      "downsampling_factor": [
+        16,
+        16
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 42,
+      "segmentation_score": 0.6111718749999999
+    },
+    {
+      "conv_name": "/model.42/cv2.1/cv2.1.1/conv/Conv_output_0",
+      "output_name": "/model.42/cv2.1/cv2.1.1/act/Mul_output_0",
+      "shape": [
+        1,
+        64,
+        30,
+        40
+      ],
+      "spatial_size": [
+        30,
+        40
+      ],
+      "channels": 64,
+      "downsampling_factor": [
+        16,
+        16
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 42,
+      "segmentation_score": 0.6111718749999999
+    },
+    {
+      "conv_name": "/model.42/cv3.1/cv3.1.1/conv/Conv_output_0",
+      "output_name": "/model.42/cv3.1/cv3.1.1/act/Mul_output_0",
+      "shape": [
+        1,
+        256,
+        30,
+        40
+      ],
+      "spatial_size": [
+        30,
+        40
+      ],
+      "channels": 256,
+      "downsampling_factor": [
+        16,
+        16
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 42,
+      "segmentation_score": 0.6111718749999999
+    },
+    {
+      "conv_name": "/model.25/cv1/conv/Conv_output_0",
+      "output_name": "/model.25/cv1/act/Mul_output_0",
+      "shape": [
+        1,
+        512,
+        30,
+        40
+      ],
+      "spatial_size": [
+        30,
+        40
+      ],
+      "channels": 512,
+      "downsampling_factor": [
+        16,
+        16
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 25,
+      "segmentation_score": 0.5711718750000001
+    },
+    {
+      "conv_name": "/model.25/cv4/conv/Conv_output_0",
+      "output_name": "/model.25/cv4/act/Mul_output_0",
+      "shape": [
+        1,
+        1024,
+        30,
+        40
+      ],
+      "spatial_size": [
+        30,
+        40
+      ],
+      "channels": 1024,
+      "downsampling_factor": [
+        16,
+        16
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 25,
+      "segmentation_score": 0.5711718750000001
+    },
+    {
+      "conv_name": "/model.32/cv1/conv/Conv_output_0",
+      "output_name": "/model.32/cv1/act/Mul_output_0",
+      "shape": [
+        1,
+        512,
+        30,
+        40
+      ],
+      "spatial_size": [
+        30,
+        40
+      ],
+      "channels": 512,
+      "downsampling_factor": [
+        16,
+        16
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 32,
+      "segmentation_score": 0.5711718750000001
+    },
+    {
+      "conv_name": "/model.32/cv4/conv/Conv_output_0",
+      "output_name": "/model.32/cv4/act/Mul_output_0",
+      "shape": [
+        1,
+        512,
+        30,
+        40
+      ],
+      "spatial_size": [
+        30,
+        40
+      ],
+      "channels": 512,
+      "downsampling_factor": [
+        16,
+        16
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 32,
+      "segmentation_score": 0.5711718750000001
+    },
+    {
+      "conv_name": "/model.38/cv1/conv/Conv_output_0",
+      "output_name": "/model.38/cv1/act/Mul_output_0",
+      "shape": [
+        1,
+        512,
+        30,
+        40
+      ],
+      "spatial_size": [
+        30,
+        40
+      ],
+      "channels": 512,
+      "downsampling_factor": [
+        16,
+        16
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 38,
+      "segmentation_score": 0.5711718750000001
+    },
+    {
+      "conv_name": "/model.38/cv4/conv/Conv_output_0",
+      "output_name": "/model.38/cv4/act/Mul_output_0",
+      "shape": [
+        1,
+        512,
+        30,
+        40
+      ],
+      "spatial_size": [
+        30,
+        40
+      ],
+      "channels": 512,
+      "downsampling_factor": [
+        16,
+        16
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 38,
+      "segmentation_score": 0.5711718750000001
+    },
+    {
+      "conv_name": "/model.19/cv2/cv2.0/cv1/conv/Conv_output_0",
+      "output_name": "/model.19/cv2/cv2.0/cv1/act/Mul_output_0",
+      "shape": [
+        1,
+        32,
+        120,
+        160
+      ],
+      "spatial_size": [
+        120,
+        160
+      ],
+      "channels": 32,
+      "downsampling_factor": [
+        4,
+        4
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 19,
+      "segmentation_score": 0.53875
+    },
+    {
+      "conv_name": "/model.19/cv2/cv2.0/cv2/conv/Conv_output_0",
+      "output_name": "/model.19/cv2/cv2.0/cv2/act/Mul_output_0",
+      "shape": [
+        1,
+        32,
+        120,
+        160
+      ],
+      "spatial_size": [
+        120,
+        160
+      ],
+      "channels": 32,
+      "downsampling_factor": [
+        4,
+        4
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 19,
+      "segmentation_score": 0.53875
+    },
+    {
+      "conv_name": "/model.19/cv2/cv2.0/m/m.0/cv1/conv/Conv_output_0",
+      "output_name": "/model.19/cv2/cv2.0/m/m.0/cv1/act/Mul_output_0",
+      "shape": [
+        1,
+        32,
+        120,
+        160
+      ],
+      "spatial_size": [
+        120,
+        160
+      ],
+      "channels": 32,
+      "downsampling_factor": [
+        4,
+        4
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 19,
+      "segmentation_score": 0.53875
+    },
+    {
+      "conv_name": "/model.19/cv2/cv2.0/m/m.0/cv2/conv/Conv_output_0",
+      "output_name": "/model.19/cv2/cv2.0/m/m.0/cv2/act/Mul_output_0",
+      "shape": [
+        1,
+        32,
+        120,
+        160
+      ],
+      "spatial_size": [
+        120,
+        160
+      ],
+      "channels": 32,
+      "downsampling_factor": [
+        4,
+        4
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 19,
+      "segmentation_score": 0.53875
+    },
+    {
+      "conv_name": "/model.19/cv2/cv2.0/m/m.1/cv1/conv/Conv_output_0",
+      "output_name": "/model.19/cv2/cv2.0/m/m.1/cv1/act/Mul_output_0",
+      "shape": [
+        1,
+        32,
+        120,
+        160
+      ],
+      "spatial_size": [
+        120,
+        160
+      ],
+      "channels": 32,
+      "downsampling_factor": [
+        4,
+        4
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 19,
+      "segmentation_score": 0.53875
+    },
+    {
+      "conv_name": "/model.19/cv2/cv2.0/m/m.1/cv2/conv/Conv_output_0",
+      "output_name": "/model.19/cv2/cv2.0/m/m.1/cv2/act/Mul_output_0",
+      "shape": [
+        1,
+        32,
+        120,
+        160
+      ],
+      "spatial_size": [
+        120,
+        160
+      ],
+      "channels": 32,
+      "downsampling_factor": [
+        4,
+        4
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 19,
+      "segmentation_score": 0.53875
+    },
+    {
+      "conv_name": "/model.19/cv3/cv3.0/cv1/conv/Conv_output_0",
+      "output_name": "/model.19/cv3/cv3.0/cv1/act/Mul_output_0",
+      "shape": [
+        1,
+        32,
+        120,
+        160
+      ],
+      "spatial_size": [
+        120,
+        160
+      ],
+      "channels": 32,
+      "downsampling_factor": [
+        4,
+        4
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 19,
+      "segmentation_score": 0.53875
+    },
+    {
+      "conv_name": "/model.19/cv3/cv3.0/cv2/conv/Conv_output_0",
+      "output_name": "/model.19/cv3/cv3.0/cv2/act/Mul_output_0",
+      "shape": [
+        1,
+        32,
+        120,
+        160
+      ],
+      "spatial_size": [
+        120,
+        160
+      ],
+      "channels": 32,
+      "downsampling_factor": [
+        4,
+        4
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 19,
+      "segmentation_score": 0.53875
+    },
+    {
+      "conv_name": "/model.19/cv3/cv3.0/m/m.0/cv1/conv/Conv_output_0",
+      "output_name": "/model.19/cv3/cv3.0/m/m.0/cv1/act/Mul_output_0",
+      "shape": [
+        1,
+        32,
+        120,
+        160
+      ],
+      "spatial_size": [
+        120,
+        160
+      ],
+      "channels": 32,
+      "downsampling_factor": [
+        4,
+        4
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 19,
+      "segmentation_score": 0.53875
+    },
+    {
+      "conv_name": "/model.19/cv3/cv3.0/m/m.0/cv2/conv/Conv_output_0",
+      "output_name": "/model.19/cv3/cv3.0/m/m.0/cv2/act/Mul_output_0",
+      "shape": [
+        1,
+        32,
+        120,
+        160
+      ],
+      "spatial_size": [
+        120,
+        160
+      ],
+      "channels": 32,
+      "downsampling_factor": [
+        4,
+        4
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 19,
+      "segmentation_score": 0.53875
+    },
+    {
+      "conv_name": "/model.19/cv3/cv3.0/m/m.1/cv1/conv/Conv_output_0",
+      "output_name": "/model.19/cv3/cv3.0/m/m.1/cv1/act/Mul_output_0",
+      "shape": [
+        1,
+        32,
+        120,
+        160
+      ],
+      "spatial_size": [
+        120,
+        160
+      ],
+      "channels": 32,
+      "downsampling_factor": [
+        4,
+        4
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 19,
+      "segmentation_score": 0.53875
+    },
+    {
+      "conv_name": "/model.19/cv3/cv3.0/m/m.1/cv2/conv/Conv_output_0",
+      "output_name": "/model.19/cv3/cv3.0/m/m.1/cv2/act/Mul_output_0",
+      "shape": [
+        1,
+        32,
+        120,
+        160
+      ],
+      "spatial_size": [
+        120,
+        160
+      ],
+      "channels": 32,
+      "downsampling_factor": [
+        4,
+        4
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 19,
+      "segmentation_score": 0.53875
+    },
+    {
+      "conv_name": "/model.4/cv1/conv/Conv_output_0",
+      "output_name": "/model.4/cv1/act/Mul_output_0",
+      "shape": [
+        1,
+        128,
+        60,
+        80
+      ],
+      "spatial_size": [
+        60,
+        80
+      ],
+      "channels": 128,
+      "downsampling_factor": [
+        8,
+        8
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 4,
+      "segmentation_score": 0.4946875
+    },
+    {
+      "conv_name": "/model.4/cv2/conv/Conv_output_0",
+      "output_name": "/model.4/cv2/act/Mul_output_0",
+      "shape": [
+        1,
+        128,
+        60,
+        80
+      ],
+      "spatial_size": [
+        60,
+        80
+      ],
+      "channels": 128,
+      "downsampling_factor": [
+        8,
+        8
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 4,
+      "segmentation_score": 0.4946875
+    },
+    {
+      "conv_name": "/model.5/cv1/conv/Conv_output_0",
+      "output_name": "/model.5/cv1/act/Mul_output_0",
+      "shape": [
+        1,
+        256,
+        60,
+        80
+      ],
+      "spatial_size": [
+        60,
+        80
+      ],
+      "channels": 256,
+      "downsampling_factor": [
+        8,
+        8
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 5,
+      "segmentation_score": 0.4946875
+    },
+    {
+      "conv_name": "/model.5/cv2/cv2.0/cv1/conv/Conv_output_0",
+      "output_name": "/model.5/cv2/cv2.0/cv1/act/Mul_output_0",
+      "shape": [
+        1,
+        64,
+        60,
+        80
+      ],
+      "spatial_size": [
+        60,
+        80
+      ],
+      "channels": 64,
+      "downsampling_factor": [
+        8,
+        8
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 5,
+      "segmentation_score": 0.4946875
+    },
+    {
+      "conv_name": "/model.5/cv2/cv2.0/cv2/conv/Conv_output_0",
+      "output_name": "/model.5/cv2/cv2.0/cv2/act/Mul_output_0",
+      "shape": [
+        1,
+        64,
+        60,
+        80
+      ],
+      "spatial_size": [
+        60,
+        80
+      ],
+      "channels": 64,
+      "downsampling_factor": [
+        8,
+        8
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 5,
+      "segmentation_score": 0.4946875
+    },
+    {
+      "conv_name": "/model.5/cv2/cv2.0/m/m.0/cv1/conv/Conv_output_0",
+      "output_name": "/model.5/cv2/cv2.0/m/m.0/cv1/act/Mul_output_0",
+      "shape": [
+        1,
+        64,
+        60,
+        80
+      ],
+      "spatial_size": [
+        60,
+        80
+      ],
+      "channels": 64,
+      "downsampling_factor": [
+        8,
+        8
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 5,
+      "segmentation_score": 0.4946875
+    },
+    {
+      "conv_name": "/model.5/cv2/cv2.0/m/m.0/cv2/conv/Conv_output_0",
+      "output_name": "/model.5/cv2/cv2.0/m/m.0/cv2/act/Mul_output_0",
+      "shape": [
+        1,
+        64,
+        60,
+        80
+      ],
+      "spatial_size": [
+        60,
+        80
+      ],
+      "channels": 64,
+      "downsampling_factor": [
+        8,
+        8
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 5,
+      "segmentation_score": 0.4946875
+    },
+    {
+      "conv_name": "/model.5/cv2/cv2.0/m/m.1/cv1/conv/Conv_output_0",
+      "output_name": "/model.5/cv2/cv2.0/m/m.1/cv1/act/Mul_output_0",
+      "shape": [
+        1,
+        64,
+        60,
+        80
+      ],
+      "spatial_size": [
+        60,
+        80
+      ],
+      "channels": 64,
+      "downsampling_factor": [
+        8,
+        8
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 5,
+      "segmentation_score": 0.4946875
+    },
+    {
+      "conv_name": "/model.5/cv2/cv2.0/m/m.1/cv2/conv/Conv_output_0",
+      "output_name": "/model.5/cv2/cv2.0/m/m.1/cv2/act/Mul_output_0",
+      "shape": [
+        1,
+        64,
+        60,
+        80
+      ],
+      "spatial_size": [
+        60,
+        80
+      ],
+      "channels": 64,
+      "downsampling_factor": [
+        8,
+        8
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 5,
+      "segmentation_score": 0.4946875
+    },
+    {
+      "conv_name": "/model.5/cv2/cv2.0/cv3/conv/Conv_output_0",
+      "output_name": "/model.5/cv2/cv2.0/cv3/act/Mul_output_0",
+      "shape": [
+        1,
+        128,
+        60,
+        80
+      ],
+      "spatial_size": [
+        60,
+        80
+      ],
+      "channels": 128,
+      "downsampling_factor": [
+        8,
+        8
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 5,
+      "segmentation_score": 0.4946875
+    },
+    {
+      "conv_name": "/model.5/cv2/cv2.1/conv/Conv_output_0",
+      "output_name": "/model.5/cv2/cv2.1/act/Mul_output_0",
+      "shape": [
+        1,
+        128,
+        60,
+        80
+      ],
+      "spatial_size": [
+        60,
+        80
+      ],
+      "channels": 128,
+      "downsampling_factor": [
+        8,
+        8
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 5,
+      "segmentation_score": 0.4946875
+    },
+    {
+      "conv_name": "/model.5/cv3/cv3.0/cv1/conv/Conv_output_0",
+      "output_name": "/model.5/cv3/cv3.0/cv1/act/Mul_output_0",
+      "shape": [
+        1,
+        64,
+        60,
+        80
+      ],
+      "spatial_size": [
+        60,
+        80
+      ],
+      "channels": 64,
+      "downsampling_factor": [
+        8,
+        8
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 5,
+      "segmentation_score": 0.4946875
+    },
+    {
+      "conv_name": "/model.5/cv3/cv3.0/cv2/conv/Conv_output_0",
+      "output_name": "/model.5/cv3/cv3.0/cv2/act/Mul_output_0",
+      "shape": [
+        1,
+        64,
+        60,
+        80
+      ],
+      "spatial_size": [
+        60,
+        80
+      ],
+      "channels": 64,
+      "downsampling_factor": [
+        8,
+        8
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 5,
+      "segmentation_score": 0.4946875
+    },
+    {
+      "conv_name": "/model.5/cv3/cv3.0/m/m.0/cv1/conv/Conv_output_0",
+      "output_name": "/model.5/cv3/cv3.0/m/m.0/cv1/act/Mul_output_0",
+      "shape": [
+        1,
+        64,
+        60,
+        80
+      ],
+      "spatial_size": [
+        60,
+        80
+      ],
+      "channels": 64,
+      "downsampling_factor": [
+        8,
+        8
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 5,
+      "segmentation_score": 0.4946875
+    },
+    {
+      "conv_name": "/model.5/cv3/cv3.0/m/m.0/cv2/conv/Conv_output_0",
+      "output_name": "/model.5/cv3/cv3.0/m/m.0/cv2/act/Mul_output_0",
+      "shape": [
+        1,
+        64,
+        60,
+        80
+      ],
+      "spatial_size": [
+        60,
+        80
+      ],
+      "channels": 64,
+      "downsampling_factor": [
+        8,
+        8
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 5,
+      "segmentation_score": 0.4946875
+    },
+    {
+      "conv_name": "/model.5/cv3/cv3.0/m/m.1/cv1/conv/Conv_output_0",
+      "output_name": "/model.5/cv3/cv3.0/m/m.1/cv1/act/Mul_output_0",
+      "shape": [
+        1,
+        64,
+        60,
+        80
+      ],
+      "spatial_size": [
+        60,
+        80
+      ],
+      "channels": 64,
+      "downsampling_factor": [
+        8,
+        8
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 5,
+      "segmentation_score": 0.4946875
+    },
+    {
+      "conv_name": "/model.5/cv3/cv3.0/m/m.1/cv2/conv/Conv_output_0",
+      "output_name": "/model.5/cv3/cv3.0/m/m.1/cv2/act/Mul_output_0",
+      "shape": [
+        1,
+        64,
+        60,
+        80
+      ],
+      "spatial_size": [
+        60,
+        80
+      ],
+      "channels": 64,
+      "downsampling_factor": [
+        8,
+        8
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 5,
+      "segmentation_score": 0.4946875
+    },
+    {
+      "conv_name": "/model.5/cv3/cv3.0/cv3/conv/Conv_output_0",
+      "output_name": "/model.5/cv3/cv3.0/cv3/act/Mul_output_0",
+      "shape": [
+        1,
+        128,
+        60,
+        80
+      ],
+      "spatial_size": [
+        60,
+        80
+      ],
+      "channels": 128,
+      "downsampling_factor": [
+        8,
+        8
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 5,
+      "segmentation_score": 0.4946875
+    },
+    {
+      "conv_name": "/model.5/cv3/cv3.1/conv/Conv_output_0",
+      "output_name": "/model.5/cv3/cv3.1/act/Mul_output_0",
+      "shape": [
+        1,
+        128,
+        60,
+        80
+      ],
+      "spatial_size": [
+        60,
+        80
+      ],
+      "channels": 128,
+      "downsampling_factor": [
+        8,
+        8
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 5,
+      "segmentation_score": 0.4946875
+    },
+    {
+      "conv_name": "/model.6/cv1/conv/Conv_output_0",
+      "output_name": "/model.6/cv1/act/Mul_output_0",
+      "shape": [
+        1,
+        256,
+        30,
+        40
+      ],
+      "spatial_size": [
+        30,
+        40
+      ],
+      "channels": 256,
+      "downsampling_factor": [
+        16,
+        16
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 6,
+      "segmentation_score": 0.49117187500000004
+    },
+    {
+      "conv_name": "/model.6/cv2/conv/Conv_output_0",
+      "output_name": "/model.6/cv2/act/Mul_output_0",
+      "shape": [
+        1,
+        256,
+        30,
+        40
+      ],
+      "spatial_size": [
+        30,
+        40
+      ],
+      "channels": 256,
+      "downsampling_factor": [
+        16,
+        16
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 6,
+      "segmentation_score": 0.49117187500000004
+    },
+    {
+      "conv_name": "/model.7/cv2/cv2.0/cv1/conv/Conv_output_0",
+      "output_name": "/model.7/cv2/cv2.0/cv1/act/Mul_output_0",
+      "shape": [
+        1,
+        128,
+        30,
+        40
+      ],
+      "spatial_size": [
+        30,
+        40
+      ],
+      "channels": 128,
+      "downsampling_factor": [
+        16,
+        16
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 7,
+      "segmentation_score": 0.49117187500000004
+    },
+    {
+      "conv_name": "/model.7/cv2/cv2.0/cv2/conv/Conv_output_0",
+      "output_name": "/model.7/cv2/cv2.0/cv2/act/Mul_output_0",
+      "shape": [
+        1,
+        128,
+        30,
+        40
+      ],
+      "spatial_size": [
+        30,
+        40
+      ],
+      "channels": 128,
+      "downsampling_factor": [
+        16,
+        16
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 7,
+      "segmentation_score": 0.49117187500000004
+    },
+    {
+      "conv_name": "/model.7/cv2/cv2.0/m/m.0/cv1/conv/Conv_output_0",
+      "output_name": "/model.7/cv2/cv2.0/m/m.0/cv1/act/Mul_output_0",
+      "shape": [
+        1,
+        128,
+        30,
+        40
+      ],
+      "spatial_size": [
+        30,
+        40
+      ],
+      "channels": 128,
+      "downsampling_factor": [
+        16,
+        16
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 7,
+      "segmentation_score": 0.49117187500000004
+    },
+    {
+      "conv_name": "/model.7/cv2/cv2.0/m/m.0/cv2/conv/Conv_output_0",
+      "output_name": "/model.7/cv2/cv2.0/m/m.0/cv2/act/Mul_output_0",
+      "shape": [
+        1,
+        128,
+        30,
+        40
+      ],
+      "spatial_size": [
+        30,
+        40
+      ],
+      "channels": 128,
+      "downsampling_factor": [
+        16,
+        16
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 7,
+      "segmentation_score": 0.49117187500000004
+    },
+    {
+      "conv_name": "/model.7/cv2/cv2.0/m/m.1/cv1/conv/Conv_output_0",
+      "output_name": "/model.7/cv2/cv2.0/m/m.1/cv1/act/Mul_output_0",
+      "shape": [
+        1,
+        128,
+        30,
+        40
+      ],
+      "spatial_size": [
+        30,
+        40
+      ],
+      "channels": 128,
+      "downsampling_factor": [
+        16,
+        16
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 7,
+      "segmentation_score": 0.49117187500000004
+    },
+    {
+      "conv_name": "/model.7/cv2/cv2.0/m/m.1/cv2/conv/Conv_output_0",
+      "output_name": "/model.7/cv2/cv2.0/m/m.1/cv2/act/Mul_output_0",
+      "shape": [
+        1,
+        128,
+        30,
+        40
+      ],
+      "spatial_size": [
+        30,
+        40
+      ],
+      "channels": 128,
+      "downsampling_factor": [
+        16,
+        16
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 7,
+      "segmentation_score": 0.49117187500000004
+    },
+    {
+      "conv_name": "/model.7/cv2/cv2.0/cv3/conv/Conv_output_0",
+      "output_name": "/model.7/cv2/cv2.0/cv3/act/Mul_output_0",
+      "shape": [
+        1,
+        256,
+        30,
+        40
+      ],
+      "spatial_size": [
+        30,
+        40
+      ],
+      "channels": 256,
+      "downsampling_factor": [
+        16,
+        16
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 7,
+      "segmentation_score": 0.49117187500000004
+    },
+    {
+      "conv_name": "/model.7/cv2/cv2.1/conv/Conv_output_0",
+      "output_name": "/model.7/cv2/cv2.1/act/Mul_output_0",
+      "shape": [
+        1,
+        256,
+        30,
+        40
+      ],
+      "spatial_size": [
+        30,
+        40
+      ],
+      "channels": 256,
+      "downsampling_factor": [
+        16,
+        16
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 7,
+      "segmentation_score": 0.49117187500000004
+    },
+    {
+      "conv_name": "/model.7/cv3/cv3.0/cv1/conv/Conv_output_0",
+      "output_name": "/model.7/cv3/cv3.0/cv1/act/Mul_output_0",
+      "shape": [
+        1,
+        128,
+        30,
+        40
+      ],
+      "spatial_size": [
+        30,
+        40
+      ],
+      "channels": 128,
+      "downsampling_factor": [
+        16,
+        16
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 7,
+      "segmentation_score": 0.49117187500000004
+    },
+    {
+      "conv_name": "/model.7/cv3/cv3.0/cv2/conv/Conv_output_0",
+      "output_name": "/model.7/cv3/cv3.0/cv2/act/Mul_output_0",
+      "shape": [
+        1,
+        128,
+        30,
+        40
+      ],
+      "spatial_size": [
+        30,
+        40
+      ],
+      "channels": 128,
+      "downsampling_factor": [
+        16,
+        16
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 7,
+      "segmentation_score": 0.49117187500000004
+    },
+    {
+      "conv_name": "/model.7/cv3/cv3.0/m/m.0/cv1/conv/Conv_output_0",
+      "output_name": "/model.7/cv3/cv3.0/m/m.0/cv1/act/Mul_output_0",
+      "shape": [
+        1,
+        128,
+        30,
+        40
+      ],
+      "spatial_size": [
+        30,
+        40
+      ],
+      "channels": 128,
+      "downsampling_factor": [
+        16,
+        16
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 7,
+      "segmentation_score": 0.49117187500000004
+    },
+    {
+      "conv_name": "/model.7/cv3/cv3.0/m/m.0/cv2/conv/Conv_output_0",
+      "output_name": "/model.7/cv3/cv3.0/m/m.0/cv2/act/Mul_output_0",
+      "shape": [
+        1,
+        128,
+        30,
+        40
+      ],
+      "spatial_size": [
+        30,
+        40
+      ],
+      "channels": 128,
+      "downsampling_factor": [
+        16,
+        16
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 7,
+      "segmentation_score": 0.49117187500000004
+    },
+    {
+      "conv_name": "/model.7/cv3/cv3.0/m/m.1/cv1/conv/Conv_output_0",
+      "output_name": "/model.7/cv3/cv3.0/m/m.1/cv1/act/Mul_output_0",
+      "shape": [
+        1,
+        128,
+        30,
+        40
+      ],
+      "spatial_size": [
+        30,
+        40
+      ],
+      "channels": 128,
+      "downsampling_factor": [
+        16,
+        16
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 7,
+      "segmentation_score": 0.49117187500000004
+    },
+    {
+      "conv_name": "/model.7/cv3/cv3.0/m/m.1/cv2/conv/Conv_output_0",
+      "output_name": "/model.7/cv3/cv3.0/m/m.1/cv2/act/Mul_output_0",
+      "shape": [
+        1,
+        128,
+        30,
+        40
+      ],
+      "spatial_size": [
+        30,
+        40
+      ],
+      "channels": 128,
+      "downsampling_factor": [
+        16,
+        16
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 7,
+      "segmentation_score": 0.49117187500000004
+    },
+    {
+      "conv_name": "/model.7/cv3/cv3.0/cv3/conv/Conv_output_0",
+      "output_name": "/model.7/cv3/cv3.0/cv3/act/Mul_output_0",
+      "shape": [
+        1,
+        256,
+        30,
+        40
+      ],
+      "spatial_size": [
+        30,
+        40
+      ],
+      "channels": 256,
+      "downsampling_factor": [
+        16,
+        16
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 7,
+      "segmentation_score": 0.49117187500000004
+    },
+    {
+      "conv_name": "/model.7/cv3/cv3.1/conv/Conv_output_0",
+      "output_name": "/model.7/cv3/cv3.1/act/Mul_output_0",
+      "shape": [
+        1,
+        256,
+        30,
+        40
+      ],
+      "spatial_size": [
+        30,
+        40
+      ],
+      "channels": 256,
+      "downsampling_factor": [
+        16,
+        16
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 7,
+      "segmentation_score": 0.49117187500000004
+    },
+    {
+      "conv_name": "/model.28/cv2/cv2.0/cv1/conv/Conv_output_0",
+      "output_name": "/model.28/cv2/cv2.0/cv1/act/Mul_output_0",
+      "shape": [
+        1,
+        128,
+        15,
+        20
+      ],
+      "spatial_size": [
+        15,
+        20
+      ],
+      "channels": 128,
+      "downsampling_factor": [
+        32,
+        32
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 28,
+      "segmentation_score": 0.49029296875
+    },
+    {
+      "conv_name": "/model.28/cv2/cv2.0/cv2/conv/Conv_output_0",
+      "output_name": "/model.28/cv2/cv2.0/cv2/act/Mul_output_0",
+      "shape": [
+        1,
+        128,
+        15,
+        20
+      ],
+      "spatial_size": [
+        15,
+        20
+      ],
+      "channels": 128,
+      "downsampling_factor": [
+        32,
+        32
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 28,
+      "segmentation_score": 0.49029296875
+    },
+    {
+      "conv_name": "/model.28/cv2/cv2.0/m/m.0/cv1/conv/Conv_output_0",
+      "output_name": "/model.28/cv2/cv2.0/m/m.0/cv1/act/Mul_output_0",
+      "shape": [
+        1,
+        128,
+        15,
+        20
+      ],
+      "spatial_size": [
+        15,
+        20
+      ],
+      "channels": 128,
+      "downsampling_factor": [
+        32,
+        32
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 28,
+      "segmentation_score": 0.49029296875
+    },
+    {
+      "conv_name": "/model.28/cv2/cv2.0/m/m.0/cv2/conv/Conv_output_0",
+      "output_name": "/model.28/cv2/cv2.0/m/m.0/cv2/act/Mul_output_0",
+      "shape": [
+        1,
+        128,
+        15,
+        20
+      ],
+      "spatial_size": [
+        15,
+        20
+      ],
+      "channels": 128,
+      "downsampling_factor": [
+        32,
+        32
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 28,
+      "segmentation_score": 0.49029296875
+    },
+    {
+      "conv_name": "/model.28/cv2/cv2.0/m/m.1/cv1/conv/Conv_output_0",
+      "output_name": "/model.28/cv2/cv2.0/m/m.1/cv1/act/Mul_output_0",
+      "shape": [
+        1,
+        128,
+        15,
+        20
+      ],
+      "spatial_size": [
+        15,
+        20
+      ],
+      "channels": 128,
+      "downsampling_factor": [
+        32,
+        32
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 28,
+      "segmentation_score": 0.49029296875
+    },
+    {
+      "conv_name": "/model.28/cv2/cv2.0/m/m.1/cv2/conv/Conv_output_0",
+      "output_name": "/model.28/cv2/cv2.0/m/m.1/cv2/act/Mul_output_0",
+      "shape": [
+        1,
+        128,
+        15,
+        20
+      ],
+      "spatial_size": [
+        15,
+        20
+      ],
+      "channels": 128,
+      "downsampling_factor": [
+        32,
+        32
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 28,
+      "segmentation_score": 0.49029296875
+    },
+    {
+      "conv_name": "/model.28/cv2/cv2.0/cv3/conv/Conv_output_0",
+      "output_name": "/model.28/cv2/cv2.0/cv3/act/Mul_output_0",
+      "shape": [
+        1,
+        256,
+        15,
+        20
+      ],
+      "spatial_size": [
+        15,
+        20
+      ],
+      "channels": 256,
+      "downsampling_factor": [
+        32,
+        32
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 28,
+      "segmentation_score": 0.49029296875
+    },
+    {
+      "conv_name": "/model.28/cv2/cv2.1/conv/Conv_output_0",
+      "output_name": "/model.28/cv2/cv2.1/act/Mul_output_0",
+      "shape": [
+        1,
+        256,
+        15,
+        20
+      ],
+      "spatial_size": [
+        15,
+        20
+      ],
+      "channels": 256,
+      "downsampling_factor": [
+        32,
+        32
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 28,
+      "segmentation_score": 0.49029296875
+    },
+    {
+      "conv_name": "/model.28/cv3/cv3.0/cv1/conv/Conv_output_0",
+      "output_name": "/model.28/cv3/cv3.0/cv1/act/Mul_output_0",
+      "shape": [
+        1,
+        128,
+        15,
+        20
+      ],
+      "spatial_size": [
+        15,
+        20
+      ],
+      "channels": 128,
+      "downsampling_factor": [
+        32,
+        32
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 28,
+      "segmentation_score": 0.49029296875
+    },
+    {
+      "conv_name": "/model.28/cv3/cv3.0/cv2/conv/Conv_output_0",
+      "output_name": "/model.28/cv3/cv3.0/cv2/act/Mul_output_0",
+      "shape": [
+        1,
+        128,
+        15,
+        20
+      ],
+      "spatial_size": [
+        15,
+        20
+      ],
+      "channels": 128,
+      "downsampling_factor": [
+        32,
+        32
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 28,
+      "segmentation_score": 0.49029296875
+    },
+    {
+      "conv_name": "/model.28/cv3/cv3.0/m/m.0/cv1/conv/Conv_output_0",
+      "output_name": "/model.28/cv3/cv3.0/m/m.0/cv1/act/Mul_output_0",
+      "shape": [
+        1,
+        128,
+        15,
+        20
+      ],
+      "spatial_size": [
+        15,
+        20
+      ],
+      "channels": 128,
+      "downsampling_factor": [
+        32,
+        32
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 28,
+      "segmentation_score": 0.49029296875
+    },
+    {
+      "conv_name": "/model.28/cv3/cv3.0/m/m.0/cv2/conv/Conv_output_0",
+      "output_name": "/model.28/cv3/cv3.0/m/m.0/cv2/act/Mul_output_0",
+      "shape": [
+        1,
+        128,
+        15,
+        20
+      ],
+      "spatial_size": [
+        15,
+        20
+      ],
+      "channels": 128,
+      "downsampling_factor": [
+        32,
+        32
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 28,
+      "segmentation_score": 0.49029296875
+    },
+    {
+      "conv_name": "/model.28/cv3/cv3.0/m/m.1/cv1/conv/Conv_output_0",
+      "output_name": "/model.28/cv3/cv3.0/m/m.1/cv1/act/Mul_output_0",
+      "shape": [
+        1,
+        128,
+        15,
+        20
+      ],
+      "spatial_size": [
+        15,
+        20
+      ],
+      "channels": 128,
+      "downsampling_factor": [
+        32,
+        32
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 28,
+      "segmentation_score": 0.49029296875
+    },
+    {
+      "conv_name": "/model.28/cv3/cv3.0/m/m.1/cv2/conv/Conv_output_0",
+      "output_name": "/model.28/cv3/cv3.0/m/m.1/cv2/act/Mul_output_0",
+      "shape": [
+        1,
+        128,
+        15,
+        20
+      ],
+      "spatial_size": [
+        15,
+        20
+      ],
+      "channels": 128,
+      "downsampling_factor": [
+        32,
+        32
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 28,
+      "segmentation_score": 0.49029296875
+    },
+    {
+      "conv_name": "/model.28/cv3/cv3.0/cv3/conv/Conv_output_0",
+      "output_name": "/model.28/cv3/cv3.0/cv3/act/Mul_output_0",
+      "shape": [
+        1,
+        256,
+        15,
+        20
+      ],
+      "spatial_size": [
+        15,
+        20
+      ],
+      "channels": 256,
+      "downsampling_factor": [
+        32,
+        32
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 28,
+      "segmentation_score": 0.49029296875
+    },
+    {
+      "conv_name": "/model.28/cv3/cv3.1/conv/Conv_output_0",
+      "output_name": "/model.28/cv3/cv3.1/act/Mul_output_0",
+      "shape": [
+        1,
+        256,
+        15,
+        20
+      ],
+      "spatial_size": [
+        15,
+        20
+      ],
+      "channels": 256,
+      "downsampling_factor": [
+        32,
+        32
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 28,
+      "segmentation_score": 0.49029296875
+    },
+    {
+      "conv_name": "/model.29/cv1/conv/Conv_output_0",
+      "output_name": "/model.29/cv1/act/Mul_output_0",
+      "shape": [
+        1,
+        256,
+        15,
+        20
+      ],
+      "spatial_size": [
+        15,
+        20
+      ],
+      "channels": 256,
+      "downsampling_factor": [
+        32,
+        32
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 29,
+      "segmentation_score": 0.49029296875
+    },
+    {
+      "conv_name": "/model.39/cv1/conv/Conv_output_0",
+      "output_name": "/model.39/cv1/act/Mul_output_0",
+      "shape": [
+        1,
+        256,
+        15,
+        20
+      ],
+      "spatial_size": [
+        15,
+        20
+      ],
+      "channels": 256,
+      "downsampling_factor": [
+        32,
+        32
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 39,
+      "segmentation_score": 0.49029296875
+    },
+    {
+      "conv_name": "/model.39/cv2/conv/Conv_output_0",
+      "output_name": "/model.39/cv2/act/Mul_output_0",
+      "shape": [
+        1,
+        256,
+        15,
+        20
+      ],
+      "spatial_size": [
+        15,
+        20
+      ],
+      "channels": 256,
+      "downsampling_factor": [
+        32,
+        32
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 39,
+      "segmentation_score": 0.49029296875
+    },
+    {
+      "conv_name": "/model.41/cv2/cv2.0/cv1/conv/Conv_output_0",
+      "output_name": "/model.41/cv2/cv2.0/cv1/act/Mul_output_0",
+      "shape": [
+        1,
+        256,
+        15,
+        20
+      ],
+      "spatial_size": [
+        15,
+        20
+      ],
+      "channels": 256,
+      "downsampling_factor": [
+        32,
+        32
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 41,
+      "segmentation_score": 0.49029296875
+    },
+    {
+      "conv_name": "/model.41/cv2/cv2.0/cv2/conv/Conv_output_0",
+      "output_name": "/model.41/cv2/cv2.0/cv2/act/Mul_output_0",
+      "shape": [
+        1,
+        256,
+        15,
+        20
+      ],
+      "spatial_size": [
+        15,
+        20
+      ],
+      "channels": 256,
+      "downsampling_factor": [
+        32,
+        32
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 41,
+      "segmentation_score": 0.49029296875
+    },
+    {
+      "conv_name": "/model.41/cv2/cv2.0/m/m.0/cv1/conv/Conv_output_0",
+      "output_name": "/model.41/cv2/cv2.0/m/m.0/cv1/act/Mul_output_0",
+      "shape": [
+        1,
+        256,
+        15,
+        20
+      ],
+      "spatial_size": [
+        15,
+        20
+      ],
+      "channels": 256,
+      "downsampling_factor": [
+        32,
+        32
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 41,
+      "segmentation_score": 0.49029296875
+    },
+    {
+      "conv_name": "/model.41/cv2/cv2.0/m/m.0/cv2/conv/Conv_output_0",
+      "output_name": "/model.41/cv2/cv2.0/m/m.0/cv2/act/Mul_output_0",
+      "shape": [
+        1,
+        256,
+        15,
+        20
+      ],
+      "spatial_size": [
+        15,
+        20
+      ],
+      "channels": 256,
+      "downsampling_factor": [
+        32,
+        32
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 41,
+      "segmentation_score": 0.49029296875
+    },
+    {
+      "conv_name": "/model.41/cv2/cv2.0/m/m.1/cv1/conv/Conv_output_0",
+      "output_name": "/model.41/cv2/cv2.0/m/m.1/cv1/act/Mul_output_0",
+      "shape": [
+        1,
+        256,
+        15,
+        20
+      ],
+      "spatial_size": [
+        15,
+        20
+      ],
+      "channels": 256,
+      "downsampling_factor": [
+        32,
+        32
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 41,
+      "segmentation_score": 0.49029296875
+    },
+    {
+      "conv_name": "/model.41/cv2/cv2.0/m/m.1/cv2/conv/Conv_output_0",
+      "output_name": "/model.41/cv2/cv2.0/m/m.1/cv2/act/Mul_output_0",
+      "shape": [
+        1,
+        256,
+        15,
+        20
+      ],
+      "spatial_size": [
+        15,
+        20
+      ],
+      "channels": 256,
+      "downsampling_factor": [
+        32,
+        32
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 41,
+      "segmentation_score": 0.49029296875
+    },
+    {
+      "conv_name": "/model.41/cv3/cv3.0/cv1/conv/Conv_output_0",
+      "output_name": "/model.41/cv3/cv3.0/cv1/act/Mul_output_0",
+      "shape": [
+        1,
+        256,
+        15,
+        20
+      ],
+      "spatial_size": [
+        15,
+        20
+      ],
+      "channels": 256,
+      "downsampling_factor": [
+        32,
+        32
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 41,
+      "segmentation_score": 0.49029296875
+    },
+    {
+      "conv_name": "/model.41/cv3/cv3.0/cv2/conv/Conv_output_0",
+      "output_name": "/model.41/cv3/cv3.0/cv2/act/Mul_output_0",
+      "shape": [
+        1,
+        256,
+        15,
+        20
+      ],
+      "spatial_size": [
+        15,
+        20
+      ],
+      "channels": 256,
+      "downsampling_factor": [
+        32,
+        32
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 41,
+      "segmentation_score": 0.49029296875
+    },
+    {
+      "conv_name": "/model.41/cv3/cv3.0/m/m.0/cv1/conv/Conv_output_0",
+      "output_name": "/model.41/cv3/cv3.0/m/m.0/cv1/act/Mul_output_0",
+      "shape": [
+        1,
+        256,
+        15,
+        20
+      ],
+      "spatial_size": [
+        15,
+        20
+      ],
+      "channels": 256,
+      "downsampling_factor": [
+        32,
+        32
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 41,
+      "segmentation_score": 0.49029296875
+    },
+    {
+      "conv_name": "/model.41/cv3/cv3.0/m/m.0/cv2/conv/Conv_output_0",
+      "output_name": "/model.41/cv3/cv3.0/m/m.0/cv2/act/Mul_output_0",
+      "shape": [
+        1,
+        256,
+        15,
+        20
+      ],
+      "spatial_size": [
+        15,
+        20
+      ],
+      "channels": 256,
+      "downsampling_factor": [
+        32,
+        32
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 41,
+      "segmentation_score": 0.49029296875
+    },
+    {
+      "conv_name": "/model.41/cv3/cv3.0/m/m.1/cv1/conv/Conv_output_0",
+      "output_name": "/model.41/cv3/cv3.0/m/m.1/cv1/act/Mul_output_0",
+      "shape": [
+        1,
+        256,
+        15,
+        20
+      ],
+      "spatial_size": [
+        15,
+        20
+      ],
+      "channels": 256,
+      "downsampling_factor": [
+        32,
+        32
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 41,
+      "segmentation_score": 0.49029296875
+    },
+    {
+      "conv_name": "/model.41/cv3/cv3.0/m/m.1/cv2/conv/Conv_output_0",
+      "output_name": "/model.41/cv3/cv3.0/m/m.1/cv2/act/Mul_output_0",
+      "shape": [
+        1,
+        256,
+        15,
+        20
+      ],
+      "spatial_size": [
+        15,
+        20
+      ],
+      "channels": 256,
+      "downsampling_factor": [
+        32,
+        32
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 41,
+      "segmentation_score": 0.49029296875
+    },
+    {
+      "conv_name": "/model.42/cv2.2/cv2.2.0/conv/Conv_output_0",
+      "output_name": "/model.42/cv2.2/cv2.2.0/act/Mul_output_0",
+      "shape": [
+        1,
+        64,
+        15,
+        20
+      ],
+      "spatial_size": [
+        15,
+        20
+      ],
+      "channels": 64,
+      "downsampling_factor": [
+        32,
+        32
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 42,
+      "segmentation_score": 0.49029296875
+    },
+    {
+      "conv_name": "/model.42/cv3.2/cv3.2.0/conv/Conv_output_0",
+      "output_name": "/model.42/cv3.2/cv3.2.0/act/Mul_output_0",
+      "shape": [
+        1,
+        256,
+        15,
+        20
+      ],
+      "spatial_size": [
+        15,
+        20
+      ],
+      "channels": 256,
+      "downsampling_factor": [
+        32,
+        32
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 42,
+      "segmentation_score": 0.49029296875
+    },
+    {
+      "conv_name": "/model.42/cv2.2/cv2.2.1/conv/Conv_output_0",
+      "output_name": "/model.42/cv2.2/cv2.2.1/act/Mul_output_0",
+      "shape": [
+        1,
+        64,
+        15,
+        20
+      ],
+      "spatial_size": [
+        15,
+        20
+      ],
+      "channels": 64,
+      "downsampling_factor": [
+        32,
+        32
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 42,
+      "segmentation_score": 0.49029296875
+    },
+    {
+      "conv_name": "/model.42/cv3.2/cv3.2.1/conv/Conv_output_0",
+      "output_name": "/model.42/cv3.2/cv3.2.1/act/Mul_output_0",
+      "shape": [
+        1,
+        256,
+        15,
+        20
+      ],
+      "spatial_size": [
+        15,
+        20
+      ],
+      "channels": 256,
+      "downsampling_factor": [
+        32,
+        32
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 42,
+      "segmentation_score": 0.49029296875
+    },
+    {
+      "conv_name": "/model.1/conv/Conv_output_0",
+      "output_name": "/model.1/act/Mul_output_0",
+      "shape": [
+        1,
+        64,
+        240,
+        320
+      ],
+      "spatial_size": [
+        240,
+        320
+      ],
+      "channels": 64,
+      "downsampling_factor": [
+        2,
+        2
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 1,
+      "segmentation_score": 0.485
+    },
+    {
+      "conv_name": "/model.5/cv4/conv/Conv_output_0",
+      "output_name": "/model.5/cv4/act/Mul_output_0",
+      "shape": [
+        1,
+        512,
+        60,
+        80
+      ],
+      "spatial_size": [
+        60,
+        80
+      ],
+      "channels": 512,
+      "downsampling_factor": [
+        8,
+        8
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 5,
+      "segmentation_score": 0.4546875
+    },
+    {
+      "conv_name": "/model.7/cv1/conv/Conv_output_0",
+      "output_name": "/model.7/cv1/act/Mul_output_0",
+      "shape": [
+        1,
+        512,
+        30,
+        40
+      ],
+      "spatial_size": [
+        30,
+        40
+      ],
+      "channels": 512,
+      "downsampling_factor": [
+        16,
+        16
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 7,
+      "segmentation_score": 0.45117187500000006
+    },
+    {
+      "conv_name": "/model.7/cv4/conv/Conv_output_0",
+      "output_name": "/model.7/cv4/act/Mul_output_0",
+      "shape": [
+        1,
+        1024,
+        30,
+        40
+      ],
+      "spatial_size": [
+        30,
+        40
+      ],
+      "channels": 1024,
+      "downsampling_factor": [
+        16,
+        16
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 7,
+      "segmentation_score": 0.45117187500000006
+    },
+    {
+      "conv_name": "/model.26/cv1/conv/Conv_output_0",
+      "output_name": "/model.26/cv1/act/Mul_output_0",
+      "shape": [
+        1,
+        512,
+        15,
+        20
+      ],
+      "spatial_size": [
+        15,
+        20
+      ],
+      "channels": 512,
+      "downsampling_factor": [
+        32,
+        32
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 26,
+      "segmentation_score": 0.4502929687500001
+    },
+    {
+      "conv_name": "/model.26/cv2/conv/Conv_output_0",
+      "output_name": "/model.26/cv2/act/Mul_output_0",
+      "shape": [
+        1,
+        512,
+        15,
+        20
+      ],
+      "spatial_size": [
+        15,
+        20
+      ],
+      "channels": 512,
+      "downsampling_factor": [
+        32,
+        32
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 26,
+      "segmentation_score": 0.4502929687500001
+    },
+    {
+      "conv_name": "/model.28/cv1/conv/Conv_output_0",
+      "output_name": "/model.28/cv1/act/Mul_output_0",
+      "shape": [
+        1,
+        512,
+        15,
+        20
+      ],
+      "spatial_size": [
+        15,
+        20
+      ],
+      "channels": 512,
+      "downsampling_factor": [
+        32,
+        32
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 28,
+      "segmentation_score": 0.4502929687500001
+    },
+    {
+      "conv_name": "/model.28/cv4/conv/Conv_output_0",
+      "output_name": "/model.28/cv4/act/Mul_output_0",
+      "shape": [
+        1,
+        1024,
+        15,
+        20
+      ],
+      "spatial_size": [
+        15,
+        20
+      ],
+      "channels": 1024,
+      "downsampling_factor": [
+        32,
+        32
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 28,
+      "segmentation_score": 0.4502929687500001
+    },
+    {
+      "conv_name": "/model.29/cv5/conv/Conv_output_0",
+      "output_name": "/model.29/cv5/act/Mul_output_0",
+      "shape": [
+        1,
+        512,
+        15,
+        20
+      ],
+      "spatial_size": [
+        15,
+        20
+      ],
+      "channels": 512,
+      "downsampling_factor": [
+        32,
+        32
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 29,
+      "segmentation_score": 0.4502929687500001
+    },
+    {
+      "conv_name": "/model.41/cv1/conv/Conv_output_0",
+      "output_name": "/model.41/cv1/act/Mul_output_0",
+      "shape": [
+        1,
+        1024,
+        15,
+        20
+      ],
+      "spatial_size": [
+        15,
+        20
+      ],
+      "channels": 1024,
+      "downsampling_factor": [
+        32,
+        32
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 41,
+      "segmentation_score": 0.4502929687500001
+    },
+    {
+      "conv_name": "/model.41/cv2/cv2.0/cv3/conv/Conv_output_0",
+      "output_name": "/model.41/cv2/cv2.0/cv3/act/Mul_output_0",
+      "shape": [
+        1,
+        512,
+        15,
+        20
+      ],
+      "spatial_size": [
+        15,
+        20
+      ],
+      "channels": 512,
+      "downsampling_factor": [
+        32,
+        32
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 41,
+      "segmentation_score": 0.4502929687500001
+    },
+    {
+      "conv_name": "/model.41/cv2/cv2.1/conv/Conv_output_0",
+      "output_name": "/model.41/cv2/cv2.1/act/Mul_output_0",
+      "shape": [
+        1,
+        512,
+        15,
+        20
+      ],
+      "spatial_size": [
+        15,
+        20
+      ],
+      "channels": 512,
+      "downsampling_factor": [
+        32,
+        32
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 41,
+      "segmentation_score": 0.4502929687500001
+    },
+    {
+      "conv_name": "/model.41/cv3/cv3.0/cv3/conv/Conv_output_0",
+      "output_name": "/model.41/cv3/cv3.0/cv3/act/Mul_output_0",
+      "shape": [
+        1,
+        512,
+        15,
+        20
+      ],
+      "spatial_size": [
+        15,
+        20
+      ],
+      "channels": 512,
+      "downsampling_factor": [
+        32,
+        32
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 41,
+      "segmentation_score": 0.4502929687500001
+    },
+    {
+      "conv_name": "/model.41/cv3/cv3.1/conv/Conv_output_0",
+      "output_name": "/model.41/cv3/cv3.1/act/Mul_output_0",
+      "shape": [
+        1,
+        512,
+        15,
+        20
+      ],
+      "spatial_size": [
+        15,
+        20
+      ],
+      "channels": 512,
+      "downsampling_factor": [
+        32,
+        32
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 41,
+      "segmentation_score": 0.4502929687500001
+    },
+    {
+      "conv_name": "/model.41/cv4/conv/Conv_output_0",
+      "output_name": "/model.41/cv4/act/Mul_output_0",
+      "shape": [
+        1,
+        512,
+        15,
+        20
+      ],
+      "spatial_size": [
+        15,
+        20
+      ],
+      "channels": 512,
+      "downsampling_factor": [
+        32,
+        32
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 41,
+      "segmentation_score": 0.4502929687500001
+    },
+    {
+      "conv_name": "/model.2/conv/Conv_output_0",
+      "output_name": "/model.2/act/Mul_output_0",
+      "shape": [
+        1,
+        128,
+        120,
+        160
+      ],
+      "spatial_size": [
+        120,
+        160
+      ],
+      "channels": 128,
+      "downsampling_factor": [
+        4,
+        4
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 2,
+      "segmentation_score": 0.42875
+    },
+    {
+      "conv_name": "/model.3/cv1/conv/Conv_output_0",
+      "output_name": "/model.3/cv1/act/Mul_output_0",
+      "shape": [
+        1,
+        128,
+        120,
+        160
+      ],
+      "spatial_size": [
+        120,
+        160
+      ],
+      "channels": 128,
+      "downsampling_factor": [
+        4,
+        4
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 3,
+      "segmentation_score": 0.42875
+    },
+    {
+      "conv_name": "/model.3/cv2/cv2.0/cv3/conv/Conv_output_0",
+      "output_name": "/model.3/cv2/cv2.0/cv3/act/Mul_output_0",
+      "shape": [
+        1,
+        64,
+        120,
+        160
+      ],
+      "spatial_size": [
+        120,
+        160
+      ],
+      "channels": 64,
+      "downsampling_factor": [
+        4,
+        4
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 3,
+      "segmentation_score": 0.42875
+    },
+    {
+      "conv_name": "/model.3/cv2/cv2.1/conv/Conv_output_0",
+      "output_name": "/model.3/cv2/cv2.1/act/Mul_output_0",
+      "shape": [
+        1,
+        64,
+        120,
+        160
+      ],
+      "spatial_size": [
+        120,
+        160
+      ],
+      "channels": 64,
+      "downsampling_factor": [
+        4,
+        4
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 3,
+      "segmentation_score": 0.42875
+    },
+    {
+      "conv_name": "/model.3/cv3/cv3.0/cv3/conv/Conv_output_0",
+      "output_name": "/model.3/cv3/cv3.0/cv3/act/Mul_output_0",
+      "shape": [
+        1,
+        64,
+        120,
+        160
+      ],
+      "spatial_size": [
+        120,
+        160
+      ],
+      "channels": 64,
+      "downsampling_factor": [
+        4,
+        4
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 3,
+      "segmentation_score": 0.42875
+    },
+    {
+      "conv_name": "/model.3/cv3/cv3.1/conv/Conv_output_0",
+      "output_name": "/model.3/cv3/cv3.1/act/Mul_output_0",
+      "shape": [
+        1,
+        64,
+        120,
+        160
+      ],
+      "spatial_size": [
+        120,
+        160
+      ],
+      "channels": 64,
+      "downsampling_factor": [
+        4,
+        4
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 3,
+      "segmentation_score": 0.42875
+    },
+    {
+      "conv_name": "/model.3/cv4/conv/Conv_output_0",
+      "output_name": "/model.3/cv4/act/Mul_output_0",
+      "shape": [
+        1,
+        256,
+        120,
+        160
+      ],
+      "spatial_size": [
+        120,
+        160
+      ],
+      "channels": 256,
+      "downsampling_factor": [
+        4,
+        4
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 3,
+      "segmentation_score": 0.42875
+    },
+    {
+      "conv_name": "/model.9/cv2/cv2.0/cv1/conv/Conv_output_0",
+      "output_name": "/model.9/cv2/cv2.0/cv1/act/Mul_output_0",
+      "shape": [
+        1,
+        128,
+        15,
+        20
+      ],
+      "spatial_size": [
+        15,
+        20
+      ],
+      "channels": 128,
+      "downsampling_factor": [
+        32,
+        32
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 9,
+      "segmentation_score": 0.37029296875
+    },
+    {
+      "conv_name": "/model.9/cv2/cv2.0/cv2/conv/Conv_output_0",
+      "output_name": "/model.9/cv2/cv2.0/cv2/act/Mul_output_0",
+      "shape": [
+        1,
+        128,
+        15,
+        20
+      ],
+      "spatial_size": [
+        15,
+        20
+      ],
+      "channels": 128,
+      "downsampling_factor": [
+        32,
+        32
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 9,
+      "segmentation_score": 0.37029296875
+    },
+    {
+      "conv_name": "/model.9/cv2/cv2.0/m/m.0/cv1/conv/Conv_output_0",
+      "output_name": "/model.9/cv2/cv2.0/m/m.0/cv1/act/Mul_output_0",
+      "shape": [
+        1,
+        128,
+        15,
+        20
+      ],
+      "spatial_size": [
+        15,
+        20
+      ],
+      "channels": 128,
+      "downsampling_factor": [
+        32,
+        32
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 9,
+      "segmentation_score": 0.37029296875
+    },
+    {
+      "conv_name": "/model.9/cv2/cv2.0/m/m.0/cv2/conv/Conv_output_0",
+      "output_name": "/model.9/cv2/cv2.0/m/m.0/cv2/act/Mul_output_0",
+      "shape": [
+        1,
+        128,
+        15,
+        20
+      ],
+      "spatial_size": [
+        15,
+        20
+      ],
+      "channels": 128,
+      "downsampling_factor": [
+        32,
+        32
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 9,
+      "segmentation_score": 0.37029296875
+    },
+    {
+      "conv_name": "/model.9/cv2/cv2.0/m/m.1/cv1/conv/Conv_output_0",
+      "output_name": "/model.9/cv2/cv2.0/m/m.1/cv1/act/Mul_output_0",
+      "shape": [
+        1,
+        128,
+        15,
+        20
+      ],
+      "spatial_size": [
+        15,
+        20
+      ],
+      "channels": 128,
+      "downsampling_factor": [
+        32,
+        32
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 9,
+      "segmentation_score": 0.37029296875
+    },
+    {
+      "conv_name": "/model.9/cv2/cv2.0/m/m.1/cv2/conv/Conv_output_0",
+      "output_name": "/model.9/cv2/cv2.0/m/m.1/cv2/act/Mul_output_0",
+      "shape": [
+        1,
+        128,
+        15,
+        20
+      ],
+      "spatial_size": [
+        15,
+        20
+      ],
+      "channels": 128,
+      "downsampling_factor": [
+        32,
+        32
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 9,
+      "segmentation_score": 0.37029296875
+    },
+    {
+      "conv_name": "/model.9/cv2/cv2.0/cv3/conv/Conv_output_0",
+      "output_name": "/model.9/cv2/cv2.0/cv3/act/Mul_output_0",
+      "shape": [
+        1,
+        256,
+        15,
+        20
+      ],
+      "spatial_size": [
+        15,
+        20
+      ],
+      "channels": 256,
+      "downsampling_factor": [
+        32,
+        32
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 9,
+      "segmentation_score": 0.37029296875
+    },
+    {
+      "conv_name": "/model.9/cv2/cv2.1/conv/Conv_output_0",
+      "output_name": "/model.9/cv2/cv2.1/act/Mul_output_0",
+      "shape": [
+        1,
+        256,
+        15,
+        20
+      ],
+      "spatial_size": [
+        15,
+        20
+      ],
+      "channels": 256,
+      "downsampling_factor": [
+        32,
+        32
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 9,
+      "segmentation_score": 0.37029296875
+    },
+    {
+      "conv_name": "/model.9/cv3/cv3.0/cv1/conv/Conv_output_0",
+      "output_name": "/model.9/cv3/cv3.0/cv1/act/Mul_output_0",
+      "shape": [
+        1,
+        128,
+        15,
+        20
+      ],
+      "spatial_size": [
+        15,
+        20
+      ],
+      "channels": 128,
+      "downsampling_factor": [
+        32,
+        32
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 9,
+      "segmentation_score": 0.37029296875
+    },
+    {
+      "conv_name": "/model.9/cv3/cv3.0/cv2/conv/Conv_output_0",
+      "output_name": "/model.9/cv3/cv3.0/cv2/act/Mul_output_0",
+      "shape": [
+        1,
+        128,
+        15,
+        20
+      ],
+      "spatial_size": [
+        15,
+        20
+      ],
+      "channels": 128,
+      "downsampling_factor": [
+        32,
+        32
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 9,
+      "segmentation_score": 0.37029296875
+    },
+    {
+      "conv_name": "/model.9/cv3/cv3.0/m/m.0/cv1/conv/Conv_output_0",
+      "output_name": "/model.9/cv3/cv3.0/m/m.0/cv1/act/Mul_output_0",
+      "shape": [
+        1,
+        128,
+        15,
+        20
+      ],
+      "spatial_size": [
+        15,
+        20
+      ],
+      "channels": 128,
+      "downsampling_factor": [
+        32,
+        32
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 9,
+      "segmentation_score": 0.37029296875
+    },
+    {
+      "conv_name": "/model.9/cv3/cv3.0/m/m.0/cv2/conv/Conv_output_0",
+      "output_name": "/model.9/cv3/cv3.0/m/m.0/cv2/act/Mul_output_0",
+      "shape": [
+        1,
+        128,
+        15,
+        20
+      ],
+      "spatial_size": [
+        15,
+        20
+      ],
+      "channels": 128,
+      "downsampling_factor": [
+        32,
+        32
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 9,
+      "segmentation_score": 0.37029296875
+    },
+    {
+      "conv_name": "/model.9/cv3/cv3.0/m/m.1/cv1/conv/Conv_output_0",
+      "output_name": "/model.9/cv3/cv3.0/m/m.1/cv1/act/Mul_output_0",
+      "shape": [
+        1,
+        128,
+        15,
+        20
+      ],
+      "spatial_size": [
+        15,
+        20
+      ],
+      "channels": 128,
+      "downsampling_factor": [
+        32,
+        32
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 9,
+      "segmentation_score": 0.37029296875
+    },
+    {
+      "conv_name": "/model.9/cv3/cv3.0/m/m.1/cv2/conv/Conv_output_0",
+      "output_name": "/model.9/cv3/cv3.0/m/m.1/cv2/act/Mul_output_0",
+      "shape": [
+        1,
+        128,
+        15,
+        20
+      ],
+      "spatial_size": [
+        15,
+        20
+      ],
+      "channels": 128,
+      "downsampling_factor": [
+        32,
+        32
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 9,
+      "segmentation_score": 0.37029296875
+    },
+    {
+      "conv_name": "/model.9/cv3/cv3.0/cv3/conv/Conv_output_0",
+      "output_name": "/model.9/cv3/cv3.0/cv3/act/Mul_output_0",
+      "shape": [
+        1,
+        256,
+        15,
+        20
+      ],
+      "spatial_size": [
+        15,
+        20
+      ],
+      "channels": 256,
+      "downsampling_factor": [
+        32,
+        32
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 9,
+      "segmentation_score": 0.37029296875
+    },
+    {
+      "conv_name": "/model.9/cv3/cv3.1/conv/Conv_output_0",
+      "output_name": "/model.9/cv3/cv3.1/act/Mul_output_0",
+      "shape": [
+        1,
+        256,
+        15,
+        20
+      ],
+      "spatial_size": [
+        15,
+        20
+      ],
+      "channels": 256,
+      "downsampling_factor": [
+        32,
+        32
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 9,
+      "segmentation_score": 0.37029296875
+    },
+    {
+      "conv_name": "/model.8/cv1/conv/Conv_output_0",
+      "output_name": "/model.8/cv1/act/Mul_output_0",
+      "shape": [
+        1,
+        512,
+        15,
+        20
+      ],
+      "spatial_size": [
+        15,
+        20
+      ],
+      "channels": 512,
+      "downsampling_factor": [
+        32,
+        32
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 8,
+      "segmentation_score": 0.33029296875
+    },
+    {
+      "conv_name": "/model.8/cv2/conv/Conv_output_0",
+      "output_name": "/model.8/cv2/act/Mul_output_0",
+      "shape": [
+        1,
+        512,
+        15,
+        20
+      ],
+      "spatial_size": [
+        15,
+        20
+      ],
+      "channels": 512,
+      "downsampling_factor": [
+        32,
+        32
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 8,
+      "segmentation_score": 0.33029296875
+    },
+    {
+      "conv_name": "/model.9/cv1/conv/Conv_output_0",
+      "output_name": "/model.9/cv1/act/Mul_output_0",
+      "shape": [
+        1,
+        512,
+        15,
+        20
+      ],
+      "spatial_size": [
+        15,
+        20
+      ],
+      "channels": 512,
+      "downsampling_factor": [
+        32,
+        32
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 9,
+      "segmentation_score": 0.33029296875
+    },
+    {
+      "conv_name": "/model.9/cv4/conv/Conv_output_0",
+      "output_name": "/model.9/cv4/act/Mul_output_0",
+      "shape": [
+        1,
+        1024,
+        15,
+        20
+      ],
+      "spatial_size": [
+        15,
+        20
+      ],
+      "channels": 1024,
+      "downsampling_factor": [
+        32,
+        32
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 9,
+      "segmentation_score": 0.33029296875
+    },
+    {
+      "conv_name": "/model.3/cv2/cv2.0/cv1/conv/Conv_output_0",
+      "output_name": "/model.3/cv2/cv2.0/cv1/act/Mul_output_0",
+      "shape": [
+        1,
+        32,
+        120,
+        160
+      ],
+      "spatial_size": [
+        120,
+        160
+      ],
+      "channels": 32,
+      "downsampling_factor": [
+        4,
+        4
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 3,
+      "segmentation_score": 0.32875
+    },
+    {
+      "conv_name": "/model.3/cv2/cv2.0/cv2/conv/Conv_output_0",
+      "output_name": "/model.3/cv2/cv2.0/cv2/act/Mul_output_0",
+      "shape": [
+        1,
+        32,
+        120,
+        160
+      ],
+      "spatial_size": [
+        120,
+        160
+      ],
+      "channels": 32,
+      "downsampling_factor": [
+        4,
+        4
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 3,
+      "segmentation_score": 0.32875
+    },
+    {
+      "conv_name": "/model.3/cv2/cv2.0/m/m.0/cv1/conv/Conv_output_0",
+      "output_name": "/model.3/cv2/cv2.0/m/m.0/cv1/act/Mul_output_0",
+      "shape": [
+        1,
+        32,
+        120,
+        160
+      ],
+      "spatial_size": [
+        120,
+        160
+      ],
+      "channels": 32,
+      "downsampling_factor": [
+        4,
+        4
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 3,
+      "segmentation_score": 0.32875
+    },
+    {
+      "conv_name": "/model.3/cv2/cv2.0/m/m.0/cv2/conv/Conv_output_0",
+      "output_name": "/model.3/cv2/cv2.0/m/m.0/cv2/act/Mul_output_0",
+      "shape": [
+        1,
+        32,
+        120,
+        160
+      ],
+      "spatial_size": [
+        120,
+        160
+      ],
+      "channels": 32,
+      "downsampling_factor": [
+        4,
+        4
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 3,
+      "segmentation_score": 0.32875
+    },
+    {
+      "conv_name": "/model.3/cv2/cv2.0/m/m.1/cv1/conv/Conv_output_0",
+      "output_name": "/model.3/cv2/cv2.0/m/m.1/cv1/act/Mul_output_0",
+      "shape": [
+        1,
+        32,
+        120,
+        160
+      ],
+      "spatial_size": [
+        120,
+        160
+      ],
+      "channels": 32,
+      "downsampling_factor": [
+        4,
+        4
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 3,
+      "segmentation_score": 0.32875
+    },
+    {
+      "conv_name": "/model.3/cv2/cv2.0/m/m.1/cv2/conv/Conv_output_0",
+      "output_name": "/model.3/cv2/cv2.0/m/m.1/cv2/act/Mul_output_0",
+      "shape": [
+        1,
+        32,
+        120,
+        160
+      ],
+      "spatial_size": [
+        120,
+        160
+      ],
+      "channels": 32,
+      "downsampling_factor": [
+        4,
+        4
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 3,
+      "segmentation_score": 0.32875
+    },
+    {
+      "conv_name": "/model.3/cv3/cv3.0/cv1/conv/Conv_output_0",
+      "output_name": "/model.3/cv3/cv3.0/cv1/act/Mul_output_0",
+      "shape": [
+        1,
+        32,
+        120,
+        160
+      ],
+      "spatial_size": [
+        120,
+        160
+      ],
+      "channels": 32,
+      "downsampling_factor": [
+        4,
+        4
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 3,
+      "segmentation_score": 0.32875
+    },
+    {
+      "conv_name": "/model.3/cv3/cv3.0/cv2/conv/Conv_output_0",
+      "output_name": "/model.3/cv3/cv3.0/cv2/act/Mul_output_0",
+      "shape": [
+        1,
+        32,
+        120,
+        160
+      ],
+      "spatial_size": [
+        120,
+        160
+      ],
+      "channels": 32,
+      "downsampling_factor": [
+        4,
+        4
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 3,
+      "segmentation_score": 0.32875
+    },
+    {
+      "conv_name": "/model.3/cv3/cv3.0/m/m.0/cv1/conv/Conv_output_0",
+      "output_name": "/model.3/cv3/cv3.0/m/m.0/cv1/act/Mul_output_0",
+      "shape": [
+        1,
+        32,
+        120,
+        160
+      ],
+      "spatial_size": [
+        120,
+        160
+      ],
+      "channels": 32,
+      "downsampling_factor": [
+        4,
+        4
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 3,
+      "segmentation_score": 0.32875
+    },
+    {
+      "conv_name": "/model.3/cv3/cv3.0/m/m.0/cv2/conv/Conv_output_0",
+      "output_name": "/model.3/cv3/cv3.0/m/m.0/cv2/act/Mul_output_0",
+      "shape": [
+        1,
+        32,
+        120,
+        160
+      ],
+      "spatial_size": [
+        120,
+        160
+      ],
+      "channels": 32,
+      "downsampling_factor": [
+        4,
+        4
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 3,
+      "segmentation_score": 0.32875
+    },
+    {
+      "conv_name": "/model.3/cv3/cv3.0/m/m.1/cv1/conv/Conv_output_0",
+      "output_name": "/model.3/cv3/cv3.0/m/m.1/cv1/act/Mul_output_0",
+      "shape": [
+        1,
+        32,
+        120,
+        160
+      ],
+      "spatial_size": [
+        120,
+        160
+      ],
+      "channels": 32,
+      "downsampling_factor": [
+        4,
+        4
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 3,
+      "segmentation_score": 0.32875
+    },
+    {
+      "conv_name": "/model.3/cv3/cv3.0/m/m.1/cv2/conv/Conv_output_0",
+      "output_name": "/model.3/cv3/cv3.0/m/m.1/cv2/act/Mul_output_0",
+      "shape": [
+        1,
+        32,
+        120,
+        160
+      ],
+      "spatial_size": [
+        120,
+        160
+      ],
+      "channels": 32,
+      "downsampling_factor": [
+        4,
+        4
+      ],
+      "receptive_field_estimate": null,
+      "model_stage": 3,
+      "segmentation_score": 0.32875
+    }
+  ]
+}

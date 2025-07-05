@@ -1,0 +1,32 @@
+{
+  "instance_segmentation": {
+    "best_layer": "/model.22/cv3/cv3.0/cv3/act/Mul_output_0",
+    "command": "python generate_heatmaps_unified.py --activated --layers /model.22/cv3/cv3.0/cv3/act/Mul_output_0 --alpha 0.6",
+    "characteristics": {
+      "resolution": "60x80",
+      "channels": 128,
+      "downsampling": "8x",
+      "stage": "model.22"
+    }
+  },
+  "fine_detail_segmentation": {
+    "best_layer": "/model.19/cv3/cv3.0/cv3/act/Mul_output_0",
+    "command": "python generate_heatmaps_unified.py --activated --layers /model.19/cv3/cv3.0/cv3/act/Mul_output_0 --alpha 0.6",
+    "characteristics": {
+      "resolution": "120x160",
+      "channels": 64,
+      "downsampling": "4x",
+      "stage": "model.19"
+    }
+  },
+  "semantic_segmentation": {
+    "best_layer": "/model.25/cv3/cv3.0/cv3/act/Mul_output_0",
+    "command": "python generate_heatmaps_unified.py --activated --layers /model.25/cv3/cv3.0/cv3/act/Mul_output_0 --alpha 0.6",
+    "characteristics": {
+      "resolution": "30x40",
+      "channels": 256,
+      "downsampling": "16x",
+      "stage": "model.25"
+    }
+  }
+}

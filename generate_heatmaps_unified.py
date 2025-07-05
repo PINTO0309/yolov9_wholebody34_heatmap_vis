@@ -17,6 +17,33 @@ def find_conv_outputs(graph: gs.Graph) -> List[Tuple[str, gs.Variable]]:
             conv_outputs.append((output_name, node.outputs[0]))
     return conv_outputs
 
+def find_activated_conv_outputs(graph: gs.Graph) -> List[Tuple[str, gs.Variable]]:
+    """Find all Conv layer outputs that go through Swish activation (Sigmoid + Mul)"""
+    activated_outputs = []
+    
+    for node in graph.nodes:
+        if node.op == "Conv":
+            # Check if Conv output goes to Sigmoid
+            conv_output = node.outputs[0]
+            
+            # Find nodes that use this Conv output
+            for next_node in graph.nodes:
+                if conv_output in next_node.inputs and next_node.op == "Sigmoid":
+                    sigmoid_output = next_node.outputs[0]
+                    
+                    # Check if Sigmoid output goes to Mul (completing Swish pattern)
+                    for mul_node in graph.nodes:
+                        if mul_node.op == "Mul" and sigmoid_output in mul_node.inputs:
+                            # Check if the Mul also takes the original Conv output
+                            # (Swish = x * sigmoid(x))
+                            if conv_output in mul_node.inputs:
+                                # Use the actual Mul output name instead of creating a new one
+                                output_name = mul_node.outputs[0].name
+                                activated_outputs.append((output_name, mul_node.outputs[0]))
+                                break
+    
+    return activated_outputs
+
 def get_model_input_shape(model_path: str) -> Tuple[int, int]:
     """Get the input shape (width, height) from ONNX model"""
     model = onnx.load(model_path)
@@ -39,7 +66,7 @@ def get_model_input_shape(model_path: str) -> Tuple[int, int]:
         print("Warning: Could not detect input shape from model, using default 640x480")
         return (640, 480)
 
-def modify_onnx_model(input_model_path: str, output_model_path: str, target_layers: List[str] = None) -> Tuple[List[str], Tuple[int, int]]:
+def modify_onnx_model(input_model_path: str, output_model_path: str, target_layers: List[str] = None, activated: bool = False) -> Tuple[List[str], Tuple[int, int]]:
     """Modify ONNX model to expose Conv layer outputs and return input shape"""
     # Load the model
     model = onnx.load(input_model_path)
@@ -48,9 +75,13 @@ def modify_onnx_model(input_model_path: str, output_model_path: str, target_laye
     # Get input shape
     input_shape = get_model_input_shape(input_model_path)
 
-    # Find all Conv outputs
-    all_conv_outputs = find_conv_outputs(graph)
-    print(f"Found {len(all_conv_outputs)} Conv layers in total")
+    # Find Conv outputs based on activated flag
+    if activated:
+        all_conv_outputs = find_activated_conv_outputs(graph)
+        print(f"Found {len(all_conv_outputs)} activated Conv layers (with Swish) in total")
+    else:
+        all_conv_outputs = find_conv_outputs(graph)
+        print(f"Found {len(all_conv_outputs)} Conv layers in total")
 
     # Filter by target layers if specified
     if target_layers:
@@ -233,6 +264,7 @@ def main():
     parser.add_argument('--layers', nargs='+', help='Target Conv layer names or patterns (e.g., model.7 cv3.0)')
     parser.add_argument('--alpha', type=float, default=0.4, help='Overlay transparency (0.0-1.0, default: 0.4)')
     parser.add_argument('--no-overlay', action='store_true', help='Skip overlay generation')
+    parser.add_argument('--activated', action='store_true', help='Use activated values after Swish (Sigmoid + Mul) instead of raw Conv outputs')
     args = parser.parse_args()
 
     # Paths
@@ -261,8 +293,9 @@ def main():
         os.makedirs(overlay_dir, exist_ok=True)
 
     # Step 1: Inspect and modify ONNX model
-    print("Modifying ONNX model to expose Conv outputs...")
-    conv_output_names, model_input_size = modify_onnx_model(input_model_path, modified_model_path, args.layers)
+    output_type = "activated Conv outputs (after Swish)" if args.activated else "Conv outputs"
+    print(f"Modifying ONNX model to expose {output_type}...")
+    conv_output_names, model_input_size = modify_onnx_model(input_model_path, modified_model_path, args.layers, args.activated)
     print(f"Detected model input size: {model_input_size[0]}x{model_input_size[1]} (width x height)")
 
     if not conv_output_names:
@@ -284,6 +317,12 @@ def main():
     # Get all output names
     output_names = [output.name for output in session.get_outputs()]
     print(f"Total outputs: {len(output_names)}")
+    
+    # Debug: print output names when using activated mode
+    if args.activated and len(output_names) < 10:
+        print("Output names from session:")
+        for name in output_names:
+            print(f"  - {name}")
 
     # Run inference
     outputs = session.run(output_names, {input_name: img_data})
@@ -291,8 +330,10 @@ def main():
     # Step 4: Generate heatmaps for Conv outputs
     print("\nGenerating heatmaps...")
     generated_count = 0
+    
     for i, output_name in enumerate(output_names):
-        if any(conv_name in output_name for conv_name in conv_output_names):
+        # Check if this output matches any of our target conv outputs
+        if output_name in conv_output_names:
             print(f"\nProcessing {output_name}")
             print(f"Shape: {outputs[i].shape}, Min: {outputs[i].min():.4f}, Max: {outputs[i].max():.4f}")
             generate_heatmap(outputs[i], original_size, output_name, heatmaps_dir, args.invert)
