@@ -4,3 +4,4 @@ overlays_*/
 overlays_*_inverted/
 *.onnx
 annotations/
+heatmaps_concat/
