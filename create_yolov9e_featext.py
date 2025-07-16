@@ -1,12 +1,9 @@
-#\!/usr/bin/env python3
+#!/usr/bin/env python3
 import onnx
 import onnx_graphsurgeon as gs
-import numpy as np
 
 def create_feature_extraction_model(input_model_path, output_model_path, feature_layers):
-    """
-    Create a modified ONNX model with additional outputs for feature extraction
-    """
+    """Create a modified ONNX model with additional outputs for feature extraction"""
     print(f"Loading model: {input_model_path}")
     graph = gs.import_onnx(onnx.load(input_model_path))
     
@@ -28,7 +25,7 @@ def create_feature_extraction_model(input_model_path, output_model_path, feature
             print(f"Warning: Layer {tensor_name} not found in model")
     
     if not tensors_to_add:
-        print("No matching layers found\!")
+        print("No matching layers found!")
         return False
     
     # Add these tensors as additional outputs
@@ -77,7 +74,7 @@ def main():
     
     if success:
         print("\n" + "=" * 60)
-        print("Feature extraction model created successfully\!")
+        print("Feature extraction model created successfully!")
         print(f"\nUsage example:")
         print(f"  import onnxruntime as ort")
         print(f"  session = ort.InferenceSession('{output_model}')")
@@ -91,4 +88,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-EOF < /dev/null
