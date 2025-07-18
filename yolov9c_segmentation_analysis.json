@@ -1,0 +1,750 @@
+{
+  "model_info": {
+    "model_path": "yolov9_c_wholebody25_Nx3x640x640.onnx",
+    "total_nodes": 545,
+    "input_size": "640x640"
+  },
+  "layer_counts": {
+    "concat_layers": 35,
+    "swish_layers": 138,
+    "cv3_layers": 206,
+    "cv4_layers": 25,
+    "cv5_layers": 3
+  },
+  "top_10_layers_for_segmentation": [
+    {
+      "name": "/model.0/conv/Conv_output_0",
+      "type": "Conv",
+      "shape": "64x320x320",
+      "resolution": "320x320",
+      "channels": 64,
+      "downsample_factor": "2x",
+      "score": 0.38749999999999996,
+      "height": 320,
+      "width": 320
+    },
+    {
+      "name": "/model.0/act/Sigmoid_output_0",
+      "type": "Sigmoid",
+      "shape": "64x320x320",
+      "resolution": "320x320",
+      "channels": 64,
+      "downsample_factor": "2x",
+      "score": 0.38749999999999996,
+      "height": 320,
+      "width": 320
+    },
+    {
+      "name": "/model.0/act/Mul_output_0",
+      "type": "Mul",
+      "shape": "64x320x320",
+      "resolution": "320x320",
+      "channels": 64,
+      "downsample_factor": "2x",
+      "score": 0.38749999999999996,
+      "height": 320,
+      "width": 320
+    },
+    {
+      "name": "/model.4/Concat_output_0",
+      "type": "Concat",
+      "shape": "512x80x80",
+      "resolution": "80x80",
+      "channels": 512,
+      "downsample_factor": "8x",
+      "score": 0.38749999999999996,
+      "height": 80,
+      "width": 80
+    },
+    {
+      "name": "/model.4/cv4/conv/Conv_output_0",
+      "type": "Conv",
+      "shape": "512x80x80",
+      "resolution": "80x80",
+      "channels": 512,
+      "downsample_factor": "8x",
+      "score": 0.38749999999999996,
+      "height": 80,
+      "width": 80
+    },
+    {
+      "name": "/model.4/cv4/act/Sigmoid_output_0",
+      "type": "Sigmoid",
+      "shape": "512x80x80",
+      "resolution": "80x80",
+      "channels": 512,
+      "downsample_factor": "8x",
+      "score": 0.38749999999999996,
+      "height": 80,
+      "width": 80
+    },
+    {
+      "name": "/model.4/cv4/act/Mul_output_0",
+      "type": "Mul",
+      "shape": "512x80x80",
+      "resolution": "80x80",
+      "channels": 512,
+      "downsample_factor": "8x",
+      "score": 0.38749999999999996,
+      "height": 80,
+      "width": 80
+    },
+    {
+      "name": "/model.13/Resize_output_0",
+      "type": "Resize",
+      "shape": "512x80x80",
+      "resolution": "80x80",
+      "channels": 512,
+      "downsample_factor": "8x",
+      "score": 0.38749999999999996,
+      "height": 80,
+      "width": 80
+    },
+    {
+      "name": "/model.14/Concat_output_0",
+      "type": "Concat",
+      "shape": "1024x80x80",
+      "resolution": "80x80",
+      "channels": 1024,
+      "downsample_factor": "8x",
+      "score": 0.38749999999999996,
+      "height": 80,
+      "width": 80
+    },
+    {
+      "name": "/model.15/Concat_output_0",
+      "type": "Concat",
+      "shape": "512x80x80",
+      "resolution": "80x80",
+      "channels": 512,
+      "downsample_factor": "8x",
+      "score": 0.38749999999999996,
+      "height": 80,
+      "width": 80
+    }
+  ],
+  "multi_scale_recommendations": {
+    "4x_downsampling": [
+      {
+        "name": "/model.2/Concat_output_0",
+        "type": "Concat",
+        "shape": "256x160x160",
+        "resolution": "160x160",
+        "channels": 256,
+        "downsample_factor": "4x",
+        "score": 0.32499999999999996,
+        "height": 160,
+        "width": 160
+      },
+      {
+        "name": "/model.2/cv4/conv/Conv_output_0",
+        "type": "Conv",
+        "shape": "256x160x160",
+        "resolution": "160x160",
+        "channels": 256,
+        "downsample_factor": "4x",
+        "score": 0.32499999999999996,
+        "height": 160,
+        "width": 160
+      },
+      {
+        "name": "/model.2/cv4/act/Sigmoid_output_0",
+        "type": "Sigmoid",
+        "shape": "256x160x160",
+        "resolution": "160x160",
+        "channels": 256,
+        "downsample_factor": "4x",
+        "score": 0.32499999999999996,
+        "height": 160,
+        "width": 160
+      },
+      {
+        "name": "/model.2/cv4/act/Mul_output_0",
+        "type": "Mul",
+        "shape": "256x160x160",
+        "resolution": "160x160",
+        "channels": 256,
+        "downsample_factor": "4x",
+        "score": 0.32499999999999996,
+        "height": 160,
+        "width": 160
+      },
+      {
+        "name": "/model.3/AveragePool_output_0",
+        "type": "AveragePool",
+        "shape": "256x159x159",
+        "resolution": "159x159",
+        "channels": 256,
+        "downsample_factor": "4x",
+        "score": 0.32390624999999995,
+        "height": 159,
+        "width": 159
+      }
+    ],
+    "8x_downsampling": [
+      {
+        "name": "/model.4/Concat_output_0",
+        "type": "Concat",
+        "shape": "512x80x80",
+        "resolution": "80x80",
+        "channels": 512,
+        "downsample_factor": "8x",
+        "score": 0.38749999999999996,
+        "height": 80,
+        "width": 80
+      },
+      {
+        "name": "/model.4/cv4/conv/Conv_output_0",
+        "type": "Conv",
+        "shape": "512x80x80",
+        "resolution": "80x80",
+        "channels": 512,
+        "downsample_factor": "8x",
+        "score": 0.38749999999999996,
+        "height": 80,
+        "width": 80
+      },
+      {
+        "name": "/model.4/cv4/act/Sigmoid_output_0",
+        "type": "Sigmoid",
+        "shape": "512x80x80",
+        "resolution": "80x80",
+        "channels": 512,
+        "downsample_factor": "8x",
+        "score": 0.38749999999999996,
+        "height": 80,
+        "width": 80
+      },
+      {
+        "name": "/model.4/cv4/act/Mul_output_0",
+        "type": "Mul",
+        "shape": "512x80x80",
+        "resolution": "80x80",
+        "channels": 512,
+        "downsample_factor": "8x",
+        "score": 0.38749999999999996,
+        "height": 80,
+        "width": 80
+      },
+      {
+        "name": "/model.13/Resize_output_0",
+        "type": "Resize",
+        "shape": "512x80x80",
+        "resolution": "80x80",
+        "channels": 512,
+        "downsample_factor": "8x",
+        "score": 0.38749999999999996,
+        "height": 80,
+        "width": 80
+      }
+    ],
+    "16x_downsampling": [
+      {
+        "name": "/model.5/Concat_output_0",
+        "type": "Concat",
+        "shape": "512x40x40",
+        "resolution": "40x40",
+        "channels": 512,
+        "downsample_factor": "16x",
+        "score": 0.34375,
+        "height": 40,
+        "width": 40
+      },
+      {
+        "name": "/model.6/cv1/conv/Conv_output_0",
+        "type": "Conv",
+        "shape": "512x40x40",
+        "resolution": "40x40",
+        "channels": 512,
+        "downsample_factor": "16x",
+        "score": 0.34375,
+        "height": 40,
+        "width": 40
+      },
+      {
+        "name": "/model.6/cv1/act/Sigmoid_output_0",
+        "type": "Sigmoid",
+        "shape": "512x40x40",
+        "resolution": "40x40",
+        "channels": 512,
+        "downsample_factor": "16x",
+        "score": 0.34375,
+        "height": 40,
+        "width": 40
+      },
+      {
+        "name": "/model.6/cv1/act/Mul_output_0",
+        "type": "Mul",
+        "shape": "512x40x40",
+        "resolution": "40x40",
+        "channels": 512,
+        "downsample_factor": "16x",
+        "score": 0.34375,
+        "height": 40,
+        "width": 40
+      },
+      {
+        "name": "/model.6/Concat_output_0",
+        "type": "Concat",
+        "shape": "1024x40x40",
+        "resolution": "40x40",
+        "channels": 1024,
+        "downsample_factor": "16x",
+        "score": 0.34375,
+        "height": 40,
+        "width": 40
+      }
+    ],
+    "32x_downsampling": [
+      {
+        "name": "/model.7/Concat_output_0",
+        "type": "Concat",
+        "shape": "512x20x20",
+        "resolution": "20x20",
+        "channels": 512,
+        "downsample_factor": "32x",
+        "score": 0.32187499999999997,
+        "height": 20,
+        "width": 20
+      },
+      {
+        "name": "/model.8/cv1/conv/Conv_output_0",
+        "type": "Conv",
+        "shape": "512x20x20",
+        "resolution": "20x20",
+        "channels": 512,
+        "downsample_factor": "32x",
+        "score": 0.32187499999999997,
+        "height": 20,
+        "width": 20
+      },
+      {
+        "name": "/model.8/cv1/act/Sigmoid_output_0",
+        "type": "Sigmoid",
+        "shape": "512x20x20",
+        "resolution": "20x20",
+        "channels": 512,
+        "downsample_factor": "32x",
+        "score": 0.32187499999999997,
+        "height": 20,
+        "width": 20
+      },
+      {
+        "name": "/model.8/cv1/act/Mul_output_0",
+        "type": "Mul",
+        "shape": "512x20x20",
+        "resolution": "20x20",
+        "channels": 512,
+        "downsample_factor": "32x",
+        "score": 0.32187499999999997,
+        "height": 20,
+        "width": 20
+      },
+      {
+        "name": "/model.8/Concat_output_0",
+        "type": "Concat",
+        "shape": "1024x20x20",
+        "resolution": "20x20",
+        "channels": 1024,
+        "downsample_factor": "32x",
+        "score": 0.32187499999999997,
+        "height": 20,
+        "width": 20
+      }
+    ]
+  },
+  "layer_details": {
+    "concat_layers": [
+      {
+        "name": "/model.4/Concat_output_0",
+        "shape": "512x80x80",
+        "resolution": "80x80",
+        "channels": 512,
+        "downsample_factor": "8x",
+        "score": 0.38749999999999996,
+        "height": 80,
+        "width": 80
+      },
+      {
+        "name": "/model.14/Concat_output_0",
+        "shape": "1024x80x80",
+        "resolution": "80x80",
+        "channels": 1024,
+        "downsample_factor": "8x",
+        "score": 0.38749999999999996,
+        "height": 80,
+        "width": 80
+      },
+      {
+        "name": "/model.15/Concat_output_0",
+        "shape": "512x80x80",
+        "resolution": "80x80",
+        "channels": 512,
+        "downsample_factor": "8x",
+        "score": 0.38749999999999996,
+        "height": 80,
+        "width": 80
+      },
+      {
+        "name": "/model.5/Concat_output_0",
+        "shape": "512x40x40",
+        "resolution": "40x40",
+        "channels": 512,
+        "downsample_factor": "16x",
+        "score": 0.34375,
+        "height": 40,
+        "width": 40
+      },
+      {
+        "name": "/model.6/Concat_output_0",
+        "shape": "1024x40x40",
+        "resolution": "40x40",
+        "channels": 1024,
+        "downsample_factor": "16x",
+        "score": 0.34375,
+        "height": 40,
+        "width": 40
+      },
+      {
+        "name": "/model.11/Concat_output_0",
+        "shape": "1024x40x40",
+        "resolution": "40x40",
+        "channels": 1024,
+        "downsample_factor": "16x",
+        "score": 0.34375,
+        "height": 40,
+        "width": 40
+      },
+      {
+        "name": "/model.12/Concat_output_0",
+        "shape": "1024x40x40",
+        "resolution": "40x40",
+        "channels": 1024,
+        "downsample_factor": "16x",
+        "score": 0.34375,
+        "height": 40,
+        "width": 40
+      },
+      {
+        "name": "/model.17/Concat_output_0",
+        "shape": "768x40x40",
+        "resolution": "40x40",
+        "channels": 768,
+        "downsample_factor": "16x",
+        "score": 0.34375,
+        "height": 40,
+        "width": 40
+      },
+      {
+        "name": "/model.18/Concat_output_0",
+        "shape": "1024x40x40",
+        "resolution": "40x40",
+        "channels": 1024,
+        "downsample_factor": "16x",
+        "score": 0.34375,
+        "height": 40,
+        "width": 40
+      },
+      {
+        "name": "/model.2/Concat_output_0",
+        "shape": "256x160x160",
+        "resolution": "160x160",
+        "channels": 256,
+        "downsample_factor": "4x",
+        "score": 0.32499999999999996,
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "swish_layers": [
+      {
+        "name": "/model.0/act/Mul_output_0",
+        "shape": "64x320x320",
+        "resolution": "320x320",
+        "channels": 64,
+        "downsample_factor": "2x",
+        "score": 0.38749999999999996,
+        "height": 320,
+        "width": 320
+      },
+      {
+        "name": "/model.4/cv4/act/Mul_output_0",
+        "shape": "512x80x80",
+        "resolution": "80x80",
+        "channels": 512,
+        "downsample_factor": "8x",
+        "score": 0.38749999999999996,
+        "height": 80,
+        "width": 80
+      },
+      {
+        "name": "/model.6/cv1/act/Mul_output_0",
+        "shape": "512x40x40",
+        "resolution": "40x40",
+        "channels": 512,
+        "downsample_factor": "16x",
+        "score": 0.34375,
+        "height": 40,
+        "width": 40
+      },
+      {
+        "name": "/model.6/cv4/act/Mul_output_0",
+        "shape": "512x40x40",
+        "resolution": "40x40",
+        "channels": 512,
+        "downsample_factor": "16x",
+        "score": 0.34375,
+        "height": 40,
+        "width": 40
+      },
+      {
+        "name": "/model.12/cv1/act/Mul_output_0",
+        "shape": "512x40x40",
+        "resolution": "40x40",
+        "channels": 512,
+        "downsample_factor": "16x",
+        "score": 0.34375,
+        "height": 40,
+        "width": 40
+      },
+      {
+        "name": "/model.12/cv4/act/Mul_output_0",
+        "shape": "512x40x40",
+        "resolution": "40x40",
+        "channels": 512,
+        "downsample_factor": "16x",
+        "score": 0.34375,
+        "height": 40,
+        "width": 40
+      },
+      {
+        "name": "/model.18/cv1/act/Mul_output_0",
+        "shape": "512x40x40",
+        "resolution": "40x40",
+        "channels": 512,
+        "downsample_factor": "16x",
+        "score": 0.34375,
+        "height": 40,
+        "width": 40
+      },
+      {
+        "name": "/model.18/cv4/act/Mul_output_0",
+        "shape": "512x40x40",
+        "resolution": "40x40",
+        "channels": 512,
+        "downsample_factor": "16x",
+        "score": 0.34375,
+        "height": 40,
+        "width": 40
+      },
+      {
+        "name": "/model.2/cv4/act/Mul_output_0",
+        "shape": "256x160x160",
+        "resolution": "160x160",
+        "channels": 256,
+        "downsample_factor": "4x",
+        "score": 0.32499999999999996,
+        "height": 160,
+        "width": 160
+      },
+      {
+        "name": "/model.8/cv1/act/Mul_output_0",
+        "shape": "512x20x20",
+        "resolution": "20x20",
+        "channels": 512,
+        "downsample_factor": "32x",
+        "score": 0.32187499999999997,
+        "height": 20,
+        "width": 20
+      }
+    ],
+    "cv3_layers": [
+      {
+        "name": "/model.22/cv3.0/cv3.0.0/conv/Conv_output_0",
+        "shape": "256x80x80",
+        "resolution": "80x80",
+        "channels": 256,
+        "downsample_factor": "8x",
+        "score": 0.2375,
+        "height": 80,
+        "width": 80
+      },
+      {
+        "name": "/model.22/cv3.0/cv3.0.0/act/Sigmoid_output_0",
+        "shape": "256x80x80",
+        "resolution": "80x80",
+        "channels": 256,
+        "downsample_factor": "8x",
+        "score": 0.2375,
+        "height": 80,
+        "width": 80
+      },
+      {
+        "name": "/model.22/cv3.0/cv3.0.0/act/Mul_output_0",
+        "shape": "256x80x80",
+        "resolution": "80x80",
+        "channels": 256,
+        "downsample_factor": "8x",
+        "score": 0.2375,
+        "height": 80,
+        "width": 80
+      },
+      {
+        "name": "/model.22/cv3.0/cv3.0.1/conv/Conv_output_0",
+        "shape": "256x80x80",
+        "resolution": "80x80",
+        "channels": 256,
+        "downsample_factor": "8x",
+        "score": 0.2375,
+        "height": 80,
+        "width": 80
+      },
+      {
+        "name": "/model.22/cv3.0/cv3.0.1/act/Sigmoid_output_0",
+        "shape": "256x80x80",
+        "resolution": "80x80",
+        "channels": 256,
+        "downsample_factor": "8x",
+        "score": 0.2375,
+        "height": 80,
+        "width": 80
+      }
+    ],
+    "cv4_layers": [
+      {
+        "name": "/model.4/cv4/conv/Conv_output_0",
+        "shape": "512x80x80",
+        "resolution": "80x80",
+        "channels": 512,
+        "downsample_factor": "8x",
+        "score": 0.38749999999999996,
+        "height": 80,
+        "width": 80
+      },
+      {
+        "name": "/model.4/cv4/act/Sigmoid_output_0",
+        "shape": "512x80x80",
+        "resolution": "80x80",
+        "channels": 512,
+        "downsample_factor": "8x",
+        "score": 0.38749999999999996,
+        "height": 80,
+        "width": 80
+      },
+      {
+        "name": "/model.4/cv4/act/Mul_output_0",
+        "shape": "512x80x80",
+        "resolution": "80x80",
+        "channels": 512,
+        "downsample_factor": "8x",
+        "score": 0.38749999999999996,
+        "height": 80,
+        "width": 80
+      },
+      {
+        "name": "/model.6/cv4/conv/Conv_output_0",
+        "shape": "512x40x40",
+        "resolution": "40x40",
+        "channels": 512,
+        "downsample_factor": "16x",
+        "score": 0.34375,
+        "height": 40,
+        "width": 40
+      },
+      {
+        "name": "/model.6/cv4/act/Sigmoid_output_0",
+        "shape": "512x40x40",
+        "resolution": "40x40",
+        "channels": 512,
+        "downsample_factor": "16x",
+        "score": 0.34375,
+        "height": 40,
+        "width": 40
+      }
+    ],
+    "cv5_layers": [
+      {
+        "name": "/model.9/cv5/conv/Conv_output_0",
+        "shape": "512x20x20",
+        "resolution": "20x20",
+        "channels": 512,
+        "downsample_factor": "32x",
+        "score": 0.32187499999999997,
+        "height": 20,
+        "width": 20
+      },
+      {
+        "name": "/model.9/cv5/act/Sigmoid_output_0",
+        "shape": "512x20x20",
+        "resolution": "20x20",
+        "channels": 512,
+        "downsample_factor": "32x",
+        "score": 0.32187499999999997,
+        "height": 20,
+        "width": 20
+      },
+      {
+        "name": "/model.9/cv5/act/Mul_output_0",
+        "shape": "512x20x20",
+        "resolution": "20x20",
+        "channels": 512,
+        "downsample_factor": "32x",
+        "score": 0.32187499999999997,
+        "height": 20,
+        "width": 20
+      }
+    ]
+  },
+  "best_segmentation_layers": {
+    "high_resolution": [
+      {
+        "name": "/model.2/Concat_output_0",
+        "type": "Concat",
+        "shape": "256x160x160",
+        "resolution": "160x160",
+        "channels": 256,
+        "downsample_factor": "4x",
+        "score": 0.32499999999999996,
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "medium_resolution": [
+      {
+        "name": "/model.4/Concat_output_0",
+        "type": "Concat",
+        "shape": "512x80x80",
+        "resolution": "80x80",
+        "channels": 512,
+        "downsample_factor": "8x",
+        "score": 0.38749999999999996,
+        "height": 80,
+        "width": 80
+      },
+      {
+        "name": "/model.4/cv4/conv/Conv_output_0",
+        "type": "Conv",
+        "shape": "512x80x80",
+        "resolution": "80x80",
+        "channels": 512,
+        "downsample_factor": "8x",
+        "score": 0.38749999999999996,
+        "height": 80,
+        "width": 80
+      }
+    ],
+    "low_resolution": [
+      {
+        "name": "/model.5/Concat_output_0",
+        "type": "Concat",
+        "shape": "512x40x40",
+        "resolution": "40x40",
+        "channels": 512,
+        "downsample_factor": "16x",
+        "score": 0.34375,
+        "height": 40,
+        "width": 40
+      }
+    ]
+  }
+}

@@ -1,0 +1,696 @@
+{
+  "model": "yolov9_s_wholebody25_Nx3x640x640.onnx",
+  "total_nodes": 674,
+  "total_analyzed_layers": 209,
+  "concat_layers": 30,
+  "swish_layers": 179,
+  "top_10_layers": [
+    {
+      "name": "/model.0/act/Mul_output_0",
+      "type": "Swish (Mul after Sigmoid)",
+      "shape": [
+        -1,
+        32,
+        320,
+        320
+      ],
+      "height": 320,
+      "width": 320,
+      "channels": 32,
+      "downsampling": 2,
+      "score": 0.36874999999999997,
+      "spatial_factor": 0.5,
+      "channel_factor": 0.0625
+    },
+    {
+      "name": "/model.8/Concat_output_0",
+      "type": "Concat",
+      "shape": [
+        -1,
+        512,
+        20,
+        20
+      ],
+      "height": 20,
+      "width": 20,
+      "channels": 512,
+      "downsampling": 32,
+      "score": 0.32187499999999997,
+      "spatial_factor": 0.03125,
+      "channel_factor": 1.0
+    },
+    {
+      "name": "/model.9/Concat_output_0",
+      "type": "Concat",
+      "shape": [
+        -1,
+        512,
+        20,
+        20
+      ],
+      "height": 20,
+      "width": 20,
+      "channels": 512,
+      "downsampling": 32,
+      "score": 0.32187499999999997,
+      "spatial_factor": 0.03125,
+      "channel_factor": 1.0
+    },
+    {
+      "name": "/model.21/Concat_output_0",
+      "type": "Concat",
+      "shape": [
+        -1,
+        512,
+        20,
+        20
+      ],
+      "height": 20,
+      "width": 20,
+      "channels": 512,
+      "downsampling": 32,
+      "score": 0.32187499999999997,
+      "spatial_factor": 0.03125,
+      "channel_factor": 1.0
+    },
+    {
+      "name": "/model.11/Concat_output_0",
+      "type": "Concat",
+      "shape": [
+        -1,
+        448,
+        40,
+        40
+      ],
+      "height": 40,
+      "width": 40,
+      "channels": 448,
+      "downsampling": 16,
+      "score": 0.30625,
+      "spatial_factor": 0.0625,
+      "channel_factor": 0.875
+    },
+    {
+      "name": "/model.14/Concat_output_0",
+      "type": "Concat",
+      "shape": [
+        -1,
+        320,
+        80,
+        80
+      ],
+      "height": 80,
+      "width": 80,
+      "channels": 320,
+      "downsampling": 8,
+      "score": 0.275,
+      "spatial_factor": 0.125,
+      "channel_factor": 0.625
+    },
+    {
+      "name": "/model.6/Concat_output_0",
+      "type": "Concat",
+      "shape": [
+        -1,
+        384,
+        40,
+        40
+      ],
+      "height": 40,
+      "width": 40,
+      "channels": 384,
+      "downsampling": 16,
+      "score": 0.26875,
+      "spatial_factor": 0.0625,
+      "channel_factor": 0.75
+    },
+    {
+      "name": "/model.12/Concat_output_0",
+      "type": "Concat",
+      "shape": [
+        -1,
+        384,
+        40,
+        40
+      ],
+      "height": 40,
+      "width": 40,
+      "channels": 384,
+      "downsampling": 16,
+      "score": 0.26875,
+      "spatial_factor": 0.0625,
+      "channel_factor": 0.75
+    },
+    {
+      "name": "/model.18/Concat_output_0",
+      "type": "Concat",
+      "shape": [
+        -1,
+        384,
+        40,
+        40
+      ],
+      "height": 40,
+      "width": 40,
+      "channels": 384,
+      "downsampling": 16,
+      "score": 0.26875,
+      "spatial_factor": 0.0625,
+      "channel_factor": 0.75
+    },
+    {
+      "name": "/model.2/Concat_output_0",
+      "type": "Concat",
+      "shape": [
+        -1,
+        128,
+        160,
+        160
+      ],
+      "height": 160,
+      "width": 160,
+      "channels": 128,
+      "downsampling": 4,
+      "score": 0.25,
+      "spatial_factor": 0.25,
+      "channel_factor": 0.25
+    }
+  ],
+  "all_concat_layers": [
+    {
+      "name": "/model.2/Concat_output_0",
+      "type": "Concat",
+      "shape": [
+        -1,
+        128,
+        160,
+        160
+      ],
+      "height": 160,
+      "width": 160,
+      "channels": 128,
+      "downsampling": 4,
+      "score": 0.25,
+      "spatial_factor": 0.25,
+      "channel_factor": 0.25
+    },
+    {
+      "name": "/model.4/cv2/cv2.0/Concat_output_0",
+      "type": "Concat",
+      "shape": [
+        -1,
+        64,
+        80,
+        80
+      ],
+      "height": 80,
+      "width": 80,
+      "channels": 64,
+      "downsampling": 8,
+      "score": 0.125,
+      "spatial_factor": 0.125,
+      "channel_factor": 0.125
+    },
+    {
+      "name": "/model.4/cv3/cv3.0/Concat_output_0",
+      "type": "Concat",
+      "shape": [
+        -1,
+        64,
+        80,
+        80
+      ],
+      "height": 80,
+      "width": 80,
+      "channels": 64,
+      "downsampling": 8,
+      "score": 0.125,
+      "spatial_factor": 0.125,
+      "channel_factor": 0.125
+    },
+    {
+      "name": "/model.4/Concat_output_0",
+      "type": "Concat",
+      "shape": [
+        -1,
+        256,
+        80,
+        80
+      ],
+      "height": 80,
+      "width": 80,
+      "channels": 256,
+      "downsampling": 8,
+      "score": 0.2375,
+      "spatial_factor": 0.125,
+      "channel_factor": 0.5
+    },
+    {
+      "name": "/model.6/cv2/cv2.0/Concat_output_0",
+      "type": "Concat",
+      "shape": [
+        -1,
+        96,
+        40,
+        40
+      ],
+      "height": 40,
+      "width": 40,
+      "channels": 96,
+      "downsampling": 16,
+      "score": 0.09999999999999999,
+      "spatial_factor": 0.0625,
+      "channel_factor": 0.1875
+    },
+    {
+      "name": "/model.6/cv3/cv3.0/Concat_output_0",
+      "type": "Concat",
+      "shape": [
+        -1,
+        96,
+        40,
+        40
+      ],
+      "height": 40,
+      "width": 40,
+      "channels": 96,
+      "downsampling": 16,
+      "score": 0.09999999999999999,
+      "spatial_factor": 0.0625,
+      "channel_factor": 0.1875
+    },
+    {
+      "name": "/model.6/Concat_output_0",
+      "type": "Concat",
+      "shape": [
+        -1,
+        384,
+        40,
+        40
+      ],
+      "height": 40,
+      "width": 40,
+      "channels": 384,
+      "downsampling": 16,
+      "score": 0.26875,
+      "spatial_factor": 0.0625,
+      "channel_factor": 0.75
+    },
+    {
+      "name": "/model.8/cv2/cv2.0/Concat_output_0",
+      "type": "Concat",
+      "shape": [
+        -1,
+        128,
+        20,
+        20
+      ],
+      "height": 20,
+      "width": 20,
+      "channels": 128,
+      "downsampling": 32,
+      "score": 0.09687499999999999,
+      "spatial_factor": 0.03125,
+      "channel_factor": 0.25
+    },
+    {
+      "name": "/model.8/cv3/cv3.0/Concat_output_0",
+      "type": "Concat",
+      "shape": [
+        -1,
+        128,
+        20,
+        20
+      ],
+      "height": 20,
+      "width": 20,
+      "channels": 128,
+      "downsampling": 32,
+      "score": 0.09687499999999999,
+      "spatial_factor": 0.03125,
+      "channel_factor": 0.25
+    },
+    {
+      "name": "/model.8/Concat_output_0",
+      "type": "Concat",
+      "shape": [
+        -1,
+        512,
+        20,
+        20
+      ],
+      "height": 20,
+      "width": 20,
+      "channels": 512,
+      "downsampling": 32,
+      "score": 0.32187499999999997,
+      "spatial_factor": 0.03125,
+      "channel_factor": 1.0
+    },
+    {
+      "name": "/model.9/Concat_output_0",
+      "type": "Concat",
+      "shape": [
+        -1,
+        512,
+        20,
+        20
+      ],
+      "height": 20,
+      "width": 20,
+      "channels": 512,
+      "downsampling": 32,
+      "score": 0.32187499999999997,
+      "spatial_factor": 0.03125,
+      "channel_factor": 1.0
+    },
+    {
+      "name": "/model.11/Concat_output_0",
+      "type": "Concat",
+      "shape": [
+        -1,
+        448,
+        40,
+        40
+      ],
+      "height": 40,
+      "width": 40,
+      "channels": 448,
+      "downsampling": 16,
+      "score": 0.30625,
+      "spatial_factor": 0.0625,
+      "channel_factor": 0.875
+    },
+    {
+      "name": "/model.12/cv2/cv2.0/Concat_output_0",
+      "type": "Concat",
+      "shape": [
+        -1,
+        96,
+        40,
+        40
+      ],
+      "height": 40,
+      "width": 40,
+      "channels": 96,
+      "downsampling": 16,
+      "score": 0.09999999999999999,
+      "spatial_factor": 0.0625,
+      "channel_factor": 0.1875
+    },
+    {
+      "name": "/model.12/cv3/cv3.0/Concat_output_0",
+      "type": "Concat",
+      "shape": [
+        -1,
+        96,
+        40,
+        40
+      ],
+      "height": 40,
+      "width": 40,
+      "channels": 96,
+      "downsampling": 16,
+      "score": 0.09999999999999999,
+      "spatial_factor": 0.0625,
+      "channel_factor": 0.1875
+    },
+    {
+      "name": "/model.12/Concat_output_0",
+      "type": "Concat",
+      "shape": [
+        -1,
+        384,
+        40,
+        40
+      ],
+      "height": 40,
+      "width": 40,
+      "channels": 384,
+      "downsampling": 16,
+      "score": 0.26875,
+      "spatial_factor": 0.0625,
+      "channel_factor": 0.75
+    },
+    {
+      "name": "/model.14/Concat_output_0",
+      "type": "Concat",
+      "shape": [
+        -1,
+        320,
+        80,
+        80
+      ],
+      "height": 80,
+      "width": 80,
+      "channels": 320,
+      "downsampling": 8,
+      "score": 0.275,
+      "spatial_factor": 0.125,
+      "channel_factor": 0.625
+    },
+    {
+      "name": "/model.15/cv2/cv2.0/Concat_output_0",
+      "type": "Concat",
+      "shape": [
+        -1,
+        64,
+        80,
+        80
+      ],
+      "height": 80,
+      "width": 80,
+      "channels": 64,
+      "downsampling": 8,
+      "score": 0.125,
+      "spatial_factor": 0.125,
+      "channel_factor": 0.125
+    },
+    {
+      "name": "/model.15/cv3/cv3.0/Concat_output_0",
+      "type": "Concat",
+      "shape": [
+        -1,
+        64,
+        80,
+        80
+      ],
+      "height": 80,
+      "width": 80,
+      "channels": 64,
+      "downsampling": 8,
+      "score": 0.125,
+      "spatial_factor": 0.125,
+      "channel_factor": 0.125
+    },
+    {
+      "name": "/model.15/Concat_output_0",
+      "type": "Concat",
+      "shape": [
+        -1,
+        256,
+        80,
+        80
+      ],
+      "height": 80,
+      "width": 80,
+      "channels": 256,
+      "downsampling": 8,
+      "score": 0.2375,
+      "spatial_factor": 0.125,
+      "channel_factor": 0.5
+    },
+    {
+      "name": "/model.17/Concat_output_0",
+      "type": "Concat",
+      "shape": [
+        -1,
+        288,
+        40,
+        40
+      ],
+      "height": 40,
+      "width": 40,
+      "channels": 288,
+      "downsampling": 16,
+      "score": 0.21249999999999997,
+      "spatial_factor": 0.0625,
+      "channel_factor": 0.5625
+    },
+    {
+      "name": "/model.18/cv2/cv2.0/Concat_output_0",
+      "type": "Concat",
+      "shape": [
+        -1,
+        96,
+        40,
+        40
+      ],
+      "height": 40,
+      "width": 40,
+      "channels": 96,
+      "downsampling": 16,
+      "score": 0.09999999999999999,
+      "spatial_factor": 0.0625,
+      "channel_factor": 0.1875
+    },
+    {
+      "name": "/model.18/cv3/cv3.0/Concat_output_0",
+      "type": "Concat",
+      "shape": [
+        -1,
+        96,
+        40,
+        40
+      ],
+      "height": 40,
+      "width": 40,
+      "channels": 96,
+      "downsampling": 16,
+      "score": 0.09999999999999999,
+      "spatial_factor": 0.0625,
+      "channel_factor": 0.1875
+    },
+    {
+      "name": "/model.18/Concat_output_0",
+      "type": "Concat",
+      "shape": [
+        -1,
+        384,
+        40,
+        40
+      ],
+      "height": 40,
+      "width": 40,
+      "channels": 384,
+      "downsampling": 16,
+      "score": 0.26875,
+      "spatial_factor": 0.0625,
+      "channel_factor": 0.75
+    },
+    {
+      "name": "/model.20/Concat_output_0",
+      "type": "Concat",
+      "shape": [
+        -1,
+        384,
+        20,
+        20
+      ],
+      "height": 20,
+      "width": 20,
+      "channels": 384,
+      "downsampling": 32,
+      "score": 0.24687499999999998,
+      "spatial_factor": 0.03125,
+      "channel_factor": 0.75
+    },
+    {
+      "name": "/model.21/cv2/cv2.0/Concat_output_0",
+      "type": "Concat",
+      "shape": [
+        -1,
+        128,
+        20,
+        20
+      ],
+      "height": 20,
+      "width": 20,
+      "channels": 128,
+      "downsampling": 32,
+      "score": 0.09687499999999999,
+      "spatial_factor": 0.03125,
+      "channel_factor": 0.25
+    },
+    {
+      "name": "/model.21/cv3/cv3.0/Concat_output_0",
+      "type": "Concat",
+      "shape": [
+        -1,
+        128,
+        20,
+        20
+      ],
+      "height": 20,
+      "width": 20,
+      "channels": 128,
+      "downsampling": 32,
+      "score": 0.09687499999999999,
+      "spatial_factor": 0.03125,
+      "channel_factor": 0.25
+    },
+    {
+      "name": "/model.21/Concat_output_0",
+      "type": "Concat",
+      "shape": [
+        -1,
+        512,
+        20,
+        20
+      ],
+      "height": 20,
+      "width": 20,
+      "channels": 512,
+      "downsampling": 32,
+      "score": 0.32187499999999997,
+      "spatial_factor": 0.03125,
+      "channel_factor": 1.0
+    },
+    {
+      "name": "/model.22/Concat_output_0",
+      "type": "Concat",
+      "shape": [
+        -1,
+        89,
+        80,
+        80
+      ],
+      "height": 80,
+      "width": 80,
+      "channels": 89,
+      "downsampling": 8,
+      "score": 0.1396484375,
+      "spatial_factor": 0.125,
+      "channel_factor": 0.173828125
+    },
+    {
+      "name": "/model.22/Concat_1_output_0",
+      "type": "Concat",
+      "shape": [
+        -1,
+        89,
+        40,
+        40
+      ],
+      "height": 40,
+      "width": 40,
+      "channels": 89,
+      "downsampling": 16,
+      "score": 0.09589843749999999,
+      "spatial_factor": 0.0625,
+      "channel_factor": 0.173828125
+    },
+    {
+      "name": "/model.22/Concat_2_output_0",
+      "type": "Concat",
+      "shape": [
+        -1,
+        89,
+        20,
+        20
+      ],
+      "height": 20,
+      "width": 20,
+      "channels": 89,
+      "downsampling": 32,
+      "score": 0.0740234375,
+      "spatial_factor": 0.03125,
+      "channel_factor": 0.173828125
+    }
+  ],
+  "cv_modules": {
+    "cv3": 84,
+    "cv4": 8,
+    "cv5": 1
+  }
+}

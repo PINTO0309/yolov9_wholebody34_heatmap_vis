@@ -1,0 +1,280 @@
+{
+  "total_nodes": 674,
+  "concat_layers": 30,
+  "swish_layers": 179,
+  "cv_modules": 169,
+  "top_10_layers": [
+    {
+      "rank": 1,
+      "name": "/model.0/conv/Conv_output_0",
+      "type": "Conv",
+      "shape": [
+        -1,
+        16,
+        320,
+        320
+      ],
+      "score": 0.359375,
+      "downsampling": 2
+    },
+    {
+      "rank": 2,
+      "name": "/model.0/act/Mul_output_0",
+      "type": "Swish",
+      "shape": [
+        -1,
+        16,
+        320,
+        320
+      ],
+      "score": 0.359375,
+      "downsampling": 2
+    },
+    {
+      "rank": 3,
+      "name": "/model.2/Concat_output_0",
+      "type": "Concat",
+      "shape": [
+        -1,
+        64,
+        160,
+        160
+      ],
+      "score": 0.2125,
+      "downsampling": 4
+    },
+    {
+      "rank": 4,
+      "name": "/model.1/conv/Conv_output_0",
+      "type": "Conv",
+      "shape": [
+        -1,
+        32,
+        160,
+        160
+      ],
+      "score": 0.19374999999999998,
+      "downsampling": 4
+    },
+    {
+      "rank": 5,
+      "name": "/model.2/cv1/conv/Conv_output_0",
+      "type": "Conv",
+      "shape": [
+        -1,
+        32,
+        160,
+        160
+      ],
+      "score": 0.19374999999999998,
+      "downsampling": 4
+    },
+    {
+      "rank": 6,
+      "name": "/model.2/cv4/conv/Conv_output_0",
+      "type": "Conv",
+      "shape": [
+        -1,
+        32,
+        160,
+        160
+      ],
+      "score": 0.19374999999999998,
+      "downsampling": 4
+    },
+    {
+      "rank": 7,
+      "name": "/model.1/act/Mul_output_0",
+      "type": "Swish",
+      "shape": [
+        -1,
+        32,
+        160,
+        160
+      ],
+      "score": 0.19374999999999998,
+      "downsampling": 4
+    },
+    {
+      "rank": 8,
+      "name": "/model.2/cv1/act/Mul_output_0",
+      "type": "Swish",
+      "shape": [
+        -1,
+        32,
+        160,
+        160
+      ],
+      "score": 0.19374999999999998,
+      "downsampling": 4
+    },
+    {
+      "rank": 9,
+      "name": "/model.2/cv4/act/Mul_output_0",
+      "type": "Swish",
+      "shape": [
+        -1,
+        32,
+        160,
+        160
+      ],
+      "score": 0.19374999999999998,
+      "downsampling": 4
+    },
+    {
+      "rank": 10,
+      "name": "/model.2/cv2/conv/Conv_output_0",
+      "type": "Conv",
+      "shape": [
+        -1,
+        16,
+        160,
+        160
+      ],
+      "score": 0.18437499999999998,
+      "downsampling": 4
+    }
+  ],
+  "layers_by_scale": {
+    "4x": [
+      {
+        "name": "/model.2/Concat_output_0",
+        "type": "Concat",
+        "shape": [
+          -1,
+          64,
+          160,
+          160
+        ],
+        "score": 0.2125
+      },
+      {
+        "name": "/model.1/conv/Conv_output_0",
+        "type": "Conv",
+        "shape": [
+          -1,
+          32,
+          160,
+          160
+        ],
+        "score": 0.19374999999999998
+      },
+      {
+        "name": "/model.2/cv1/conv/Conv_output_0",
+        "type": "Conv",
+        "shape": [
+          -1,
+          32,
+          160,
+          160
+        ],
+        "score": 0.19374999999999998
+      }
+    ],
+    "8x": [
+      {
+        "name": "/model.14/Concat_output_0",
+        "type": "Concat",
+        "shape": [
+          -1,
+          160,
+          80,
+          80
+        ],
+        "score": 0.18125
+      },
+      {
+        "name": "/model.4/Concat_output_0",
+        "type": "Concat",
+        "shape": [
+          -1,
+          128,
+          80,
+          80
+        ],
+        "score": 0.16249999999999998
+      },
+      {
+        "name": "/model.15/Concat_output_0",
+        "type": "Concat",
+        "shape": [
+          -1,
+          128,
+          80,
+          80
+        ],
+        "score": 0.16249999999999998
+      }
+    ],
+    "16x": [
+      {
+        "name": "/model.11/Concat_output_0",
+        "type": "Concat",
+        "shape": [
+          -1,
+          224,
+          40,
+          40
+        ],
+        "score": 0.175
+      },
+      {
+        "name": "/model.6/Concat_output_0",
+        "type": "Concat",
+        "shape": [
+          -1,
+          192,
+          40,
+          40
+        ],
+        "score": 0.15625
+      },
+      {
+        "name": "/model.12/Concat_output_0",
+        "type": "Concat",
+        "shape": [
+          -1,
+          192,
+          40,
+          40
+        ],
+        "score": 0.15625
+      }
+    ],
+    "32x": [
+      {
+        "name": "/model.8/Concat_output_0",
+        "type": "Concat",
+        "shape": [
+          -1,
+          256,
+          20,
+          20
+        ],
+        "score": 0.171875
+      },
+      {
+        "name": "/model.9/Concat_output_0",
+        "type": "Concat",
+        "shape": [
+          -1,
+          256,
+          20,
+          20
+        ],
+        "score": 0.171875
+      },
+      {
+        "name": "/model.21/Concat_output_0",
+        "type": "Concat",
+        "shape": [
+          -1,
+          256,
+          20,
+          20
+        ],
+        "score": 0.171875
+      }
+    ]
+  }
+}
